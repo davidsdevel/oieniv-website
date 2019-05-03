@@ -1,5 +1,6 @@
 # Next build dir
 /.next
+/out
 
 # static folder
 /static
