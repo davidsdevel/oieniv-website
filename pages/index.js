@@ -1,17 +1,18 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from 'Components/head'
-import Nav from 'Components/nav'
-import {LandingPage} from "Components/index";
+import React from "react";
+import Link from "next/link";
+import Head from "Components/head";
+import Nav from "Components/nav";
+import {LandingPage, MissionVisionObjective} from "Components/index";
 
 const Home = () => (
-  <div>
-    <Head title="Home" />
-    <Nav />
-    <LandingPage/>
-    <style jsx>{`
+	<div>
+		<Head title="Home" />
+		<Nav />
+		<LandingPage/>
+    <MissionVisionObjective />
+		<style jsx>{`
     `}</style>
-  </div>
-)
+	</div>
+);
 
-export default Home
+export default Home;

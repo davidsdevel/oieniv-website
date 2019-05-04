@@ -8,15 +8,15 @@ module.exports = {
 		 */
 		return {
 			"/": { page: "/" }
-		}
+		};
 	},
 	webpack: config => {
-		const alias = config.resolve.alias;
+		const {alias} = config.resolve;
 
 		// Fixes npm packages that depend on `fs` module
 		config.node = {
-			fs: 'empty'
-		}
+			fs: "empty"
+		};
 
 		/*
 		 * Añadido alias para los componentes
@@ -25,7 +25,7 @@ module.exports = {
 		config.resolve.alias = {
 			...alias,
 			Components: resolve("./components")
-		}
+		};
 		return config;
 	}
-}
+};
