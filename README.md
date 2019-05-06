@@ -1,6 +1,6 @@
 # Sitio web de OIENIV [![Build Status](https://travis-ci.com/davidsdevel/oieniv-website.svg?token=W8NymexqnsnzcJQKjMsx&branch=master)](https://travis-ci.com/davidsdevel/oieniv-website)
 
-En inicio lo que se quiere es dar prescencia online a la organizacion. Este archivo es una guia de desarrollo para todos aquellos que quieran ayudar.
+En inicio lo que se quiere es dar presencia online a la organizacion. Este archivo es una guia de desarrollo para todos aquellos que quieran ayudar.
 
 ## Contenido
 
