@@ -4,7 +4,10 @@ module.exports = {
 		"es6": true,
 		"node": true
 	},
-	"extends": "eslint:recommended",
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended"
+	],
 	"globals": {
 		"Atomics": "readonly",
 		"SharedArrayBuffer": "readonly"
@@ -19,6 +22,14 @@ module.exports = {
 	"plugins": [
 		"react"
 	],
+	"settings": {
+		"react": {
+			"version": "detect"
+		},
+		"linkComponents": [
+			{"name": "Link", "linkAttribute": "href"}
+		]
+	},
 	"rules": {
 		"arrow-spacing": "error",
 		"no-duplicate-imports": [
