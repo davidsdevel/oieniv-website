@@ -1,17 +1,16 @@
 import React from "react";
-import Link from "next/link";
 import Head from "Components/head";
 import Nav from "Components/nav";
 import {LandingPage, MissionVisionObjective} from "Components/index";
 
 const Home = () => (
 	<div>
-		<Head title="Home" />
+		<Head title="OIENIV - Organizacion Cristiana en Venezuela" />
 		<Nav />
 		<LandingPage/>
-    <MissionVisionObjective />
+		<MissionVisionObjective />
 		<style jsx>{`
-    `}</style>
+	`}</style>
 	</div>
 );
 
