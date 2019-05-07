@@ -5,7 +5,7 @@ exports[`Render Slogan without crash 1`] = `
   id="slogan-container"
 >
   <h3
-    className="sub-title"
+    className="sub-titles"
   >
     OIENIV
   </h3>
@@ -21,15 +21,15 @@ exports[`Render Slogan without crash 1`] = `
     jsx="true"
   >
     
-			#slogan-container {
-				width: 80%;
-				padding: 50px 10%;
-				text-align: center;
-			}
-			#slogan-container #slogan {
-				font-size: 35px;
-				margin: 10px 0 50px 0;
-			}
+#slogan-container {
+	width: 80%;
+	padding: 50px 10%;
+	text-align: center;
+}
+#slogan-container #slogan {
+	font-size: 35px;
+	margin: 10px 0 50px 0;
+}
 		
   </style>
 </div>

@@ -128,18 +128,18 @@ exports[`Render HelperBodies without crash 1`] = `
     jsx="true"
   >
     
-			#helper-bodies-container {
-				with: 80%;
-				padding: 50px 10%;
-			}
-			#helper-bodies-container .helper-body {
-				width: 20%;
-				display: inline-block;
-				margin: 50px 2.5%;
-			}
-			#helper-bodies-container .helper-body img {
-				width: 100%;
-			}
+#helper-bodies-container {
+	with: 80%;
+	padding: 50px 10%;
+}
+#helper-bodies-container .helper-body {
+	width: 20%;
+	display: inline-block;
+	margin: 50px 2.5%;
+}
+#helper-bodies-container .helper-body img {
+	width: 100%;
+}
 		
   </style>
 </div>
