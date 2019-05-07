@@ -46,7 +46,7 @@ class MissionVisionObjective extends Component {
 		return (
 			<div id="mission-main">
 				<Child/>
-				<style jsx>{`
+				<style jsx="true">{`
 					#mission-main {
 						padding: 50px 0;
 					}
