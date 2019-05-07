@@ -62,6 +62,8 @@ const HelperBodies = () => (
 			}
 			#helper-bodies-container .helper-body {
 				width: 20%;
+				display: inline-block;
+				margin: 50px 2.5%;
 			}
 			#helper-bodies-container .helper-body img {
 				width: 100%;
