@@ -1,7 +1,12 @@
 import React from "react";
-import Head from "Components/head";
-import Nav from "Components/nav";
-import {LandingPage, MissionVisionObjective} from "Components/index";
+import Head from "../components/head";
+import Nav from "../components/nav";
+import Footer from "../components/footer";
+import LandingPage from "../components/index/landingPage";
+import MissionVisionObjective from "../components/index/missionVisionObjective";
+import HelperBodies from "../components/index/helperBodies";
+import ContactForm from "../components/index/contactForm";
+import Slogan from "../components/index/slogan";
 
 const Home = () => (
 	<div>
@@ -9,6 +14,10 @@ const Home = () => (
 		<Nav />
 		<LandingPage/>
 		<MissionVisionObjective />
+		<HelperBodies/>
+		<ContactForm />
+		<Slogan/>
+		<Footer/>
 		<style jsx>{`
 	`}</style>
 	</div>
