@@ -38,56 +38,56 @@ class ContactForm extends Component {
 					<button onClick={this.send}>Enviar</button>
 				</div>
 				<style jsx="true">{`
-					#contact-image {
-						background: url(/static/images/OIENIV%20-%20contactanos.jpg);
-						padding: 50px 0 100px 0;
-						background-position: center;
-					}
-					#contact-container {
-						width: 100%;
-					}
-					#contact-container .sub-titles {
-						color: white;
-					}
-					#contact-container input,
-					#contact-container textarea,
-					#contact-container button
-					{
-						display: block;
-    					margin: 20px auto;
-    					width: 30%;
-    					color: #b9b9b9;
-    					border: white solid 1px;
-    					background: rgba(0, 0, 0, .3);
-    					padding: 15px 30px;
-    					border-radius: 50px;
-    					transition: ease .5s;
-					}
-					#contact-container input:focus,
-					#contact-container textarea:focus
-					{
-    					color: white;
-    					outline: none;
-					}
-					#contact-container textarea {
-						height: 200px;
-						border-radius: 15px;
-					}
-					#contact-container input::placeholder,
-					#contact-container textarea::placeholder {
-						color: white;
-					}
-					#contact-container button {
-						color: white;
-						cursor: pointer;
-					}
-					#contact-container button:focus {
-						outline: none;
-					}
-					#contact-container button:hover {
-						background: #f7f7f7;
-						color: black;
-					}
+#contact-image {
+	background: url(/static/images/OIENIV%20-%20contactanos.jpg);
+	padding: 50px 0 100px 0;
+	background-position: center;
+}
+#contact-container {
+	width: 100%;
+}
+#contact-container .sub-titles {
+	color: white;
+}
+#contact-container input,
+#contact-container textarea,
+#contact-container button
+{
+	display: block;
+	margin: 20px auto;
+	width: 30%;
+	color: #b9b9b9;
+	border: white solid 1px;
+	background: rgba(0, 0, 0, .3);
+	padding: 15px 30px;
+	border-radius: 50px;
+	transition: ease .5s;
+}
+#contact-container input:focus,
+#contact-container textarea:focus
+{
+	color: white;
+	outline: none;
+}
+#contact-container textarea {
+	height: 200px;
+	border-radius: 15px;
+}
+#contact-container input::placeholder,
+#contact-container textarea::placeholder {
+	color: white;
+}
+#contact-container button {
+	color: white;
+	cursor: pointer;
+}
+#contact-container button:focus {
+	outline: none;
+}
+#contact-container button:hover {
+	background: #f7f7f7;
+	color: black;
+}
 				`}</style>
 			</div>
 		);

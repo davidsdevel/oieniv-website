@@ -11,24 +11,24 @@ const LandingPage = () => (
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<style jsx="true">{`
-			#landing-page-container {
-				background-image: url(/static/images/OIENIV%20-%20columna%20y%20baluarte%20de%20la%20verdad.jpg);
-				height: 600px;
-				color: white;
-				text-align: center;
-				padding: 50px 5%;
-			}
-			#title {
-				font-size: 70px;
-			}
-			#slogan {
-				font-size: 40px;
-			}
-			#mini-history {
-				width: 40%;
-    			font-size: 20px;
-    			margin: 100px 0 0 0;
-			}
+#landing-page-container {
+	background-image: url(/static/images/OIENIV%20-%20columna%20y%20baluarte%20de%20la%20verdad.jpg);
+	height: 600px;
+	color: white;
+	text-align: center;
+	padding: 50px 5%;
+}
+#title {
+	font-size: 70px;
+}
+#slogan {
+	font-size: 40px;
+}
+#mini-history {
+	width: 40%;
+	font-size: 20px;
+	margin: 100px 0 0 0;
+}
 		`}</style>
 	</div>
 );

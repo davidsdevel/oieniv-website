@@ -11,15 +11,15 @@ const Slogan = () => (
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<style jsx="true">{`
-			#slogan-container {
-				width: 80%;
-				padding: 50px 10%;
-				text-align: center;
-			}
-			#slogan-container #slogan {
-				font-size: 35px;
-				margin: 10px 0 50px 0;
-			}
+#slogan-container {
+	width: 80%;
+	padding: 50px 10%;
+	text-align: center;
+}
+#slogan-container #slogan {
+	font-size: 35px;
+	margin: 10px 0 50px 0;
+}
 		`}</style>
 	</div>
 );

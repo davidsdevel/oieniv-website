@@ -47,15 +47,15 @@ class MissionVisionObjective extends Component {
 			<div id="mission-main">
 				<Child/>
 				<style jsx="true">{`
-					#mission-main {
-						padding: 50px 0;
-					}
-					.mission-container {
-						width: 23.3%;
-						background: red;
-						display: inline-block;
-						margin: 0 5%
-					}
+#mission-main {
+	padding: 50px 0;
+}
+.mission-container {
+	width: 23.3%;
+	background: red;
+	display: inline-block;
+	margin: 0 5%
+}
 				`}</style>
 			</div>
 		);

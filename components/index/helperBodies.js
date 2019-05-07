@@ -56,18 +56,18 @@ const HelperBodies = () => (
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		{childs}
 		<style jsx="true">{`
-			#helper-bodies-container {
-				with: 80%;
-				padding: 50px 10%;
-			}
-			#helper-bodies-container .helper-body {
-				width: 20%;
-				display: inline-block;
-				margin: 50px 2.5%;
-			}
-			#helper-bodies-container .helper-body img {
-				width: 100%;
-			}
+#helper-bodies-container {
+	with: 80%;
+	padding: 50px 10%;
+}
+#helper-bodies-container .helper-body {
+	width: 20%;
+	display: inline-block;
+	margin: 50px 2.5%;
+}
+#helper-bodies-container .helper-body img {
+	width: 100%;
+}
 		`}</style>
 	</div>
 );
