@@ -18,8 +18,6 @@ const Home = () => (
 		<ContactForm />
 		<Slogan/>
 		<Footer/>
-		<style jsx>{`
-	`}</style>
 	</div>
 );
 
