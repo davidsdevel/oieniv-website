@@ -30,7 +30,7 @@ class ContactForm extends Component {
 		return (
 			<div>
 				<div id="contact-container">
-					<h3>Contactanos</h3>
+					<h3 className="sub-titles">Contactanos</h3>
 					<input placeholder="Nombre" onChange={this.handleInputChanges} type="text" name="name"/>
 					<input placeholder="Correo" onChange={this.handleInputChanges} type="email" name="email"/>
 					<input placeholder="Numero de Telefono" onChange={this.handleInputChanges} type="number" name="phoneNumber"/>
@@ -49,11 +49,6 @@ class ContactForm extends Component {
 						margin: 20px auto;
 						width: 30%;
 						height: 30px;
-					}
-					#contact-container h3 {
-						text-align: center;
-						font-size: 60px;
-						margin: 10px 0 50px;
 					}
 				`}</style>
 			</div>

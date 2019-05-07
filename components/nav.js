@@ -55,6 +55,11 @@ const Nav = () => (
 				text-decoration: none;
 				font-size: 13px;
 			}
+			.sub-titles {
+				font-size: 60px;
+				text-align: center;
+				margin: 10px 0 50px;
+			}
 		`}</style>
 	</nav>
 );

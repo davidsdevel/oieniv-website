@@ -2,7 +2,7 @@ import React from "react";
 
 const Slogan = () => (
 	<div id="slogan-container">
-		<h3>OIENIV</h3>
+		<h3 className="sub-title">OIENIV</h3>
 		<p id="slogan">Columna y Baluarte de la Verdad</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -15,9 +15,6 @@ const Slogan = () => (
 				width: 80%;
 				padding: 50px 10%;
 				text-align: center;
-			}
-			#slogan-container h3 {
-				font-size: 60px;
 			}
 			#slogan-container #slogan {
 				font-size: 35px;
