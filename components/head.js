@@ -2,9 +2,9 @@ import React from "react";
 import NextHead from "next/head";
 import { string } from "prop-types";
 
-const defaultDescription = "";
-const defaultOGURL = "";
-const defaultOGImage = "";
+const defaultDescription = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+const defaultOGURL = "http://localhost:3000/";
+const defaultOGImage = "http://localhost:3000/static/image.jpg";
 
 const Head = props => (
 	<NextHead>
