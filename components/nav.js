@@ -26,7 +26,7 @@ const Nav = () => (
 				))}
 			</ul>
 		</ul>
-		<style global jsx>{`
+		<style global="true" jsx="true">{`
 			@font-face {
 				font-family: Roboto;
 				src: url(/static/fonts/Roboto.ttf);
