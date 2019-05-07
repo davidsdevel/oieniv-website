@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render ContactForm without crash 1`] = `
+<div>
+  <div
+    id="contact-container"
+  >
+    <h3
+      className="sub-titles"
+    >
+      Contactanos
+    </h3>
+    <input
+      name="name"
+      onChange={[Function]}
+      placeholder="Nombre"
+      type="text"
+    />
+    <input
+      name="email"
+      onChange={[Function]}
+      placeholder="Correo"
+      type="email"
+    />
+    <input
+      name="phoneNumber"
+      onChange={[Function]}
+      placeholder="Numero de Telefono"
+      type="number"
+    />
+    <textarea
+      name="comment"
+      onChange={[Function]}
+      placeholder="Comentario"
+    />
+    <button
+      onClick={[Function]}
+    >
+      Enviar
+    </button>
+  </div>
+  <style
+    jsx="true"
+  >
+    
+					#contact-container {
+						width: 100%;
+					}
+					#contact-container input,
+					#contact-container textarea,
+					#contact-container button
+					{
+						display: block;
+						margin: 20px auto;
+						width: 30%;
+						height: 30px;
+					}
+				
+  </style>
+</div>
+`;

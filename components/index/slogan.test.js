@@ -1,11 +1,11 @@
 import React from "react";
-import MissionVisionObjective from "./missionVisionObjective";
+import Slogan from "./slogan";
 import renderer from "react-test-renderer";
 
 /*eslint-disable-next-line*/
-test("Render MissionVisionObjective without crash", () => {
+test("Render Slogan without crash", () => {
 	const component = renderer.create(
-		<MissionVisionObjective/>
+		<Slogan/>
 	);
 	let tree = component.toJSON();
 

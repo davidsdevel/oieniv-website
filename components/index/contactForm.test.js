@@ -1,13 +1,14 @@
 import React from "react";
-import MissionVisionObjective from "./missionVisionObjective";
+import ContactForm from "./contactForm";
 import renderer from "react-test-renderer";
 
 /*eslint-disable-next-line*/
-test("Render MissionVisionObjective without crash", () => {
+test("Render ContactForm without crash", () => {
 	const component = renderer.create(
-		<MissionVisionObjective/>
+		<ContactForm/>,
 	);
 	let tree = component.toJSON();
 
 	expect(tree).toMatchSnapshot(); // eslint-disable-line
 });
+

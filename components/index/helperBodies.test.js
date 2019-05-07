@@ -1,11 +1,11 @@
 import React from "react";
-import MissionVisionObjective from "./missionVisionObjective";
+import HelperBodies from "./helperBodies";
 import renderer from "react-test-renderer";
 
 /*eslint-disable-next-line*/
-test("Render MissionVisionObjective without crash", () => {
+test("Render HelperBodies without crash", () => {
 	const component = renderer.create(
-		<MissionVisionObjective/>
+		<HelperBodies/>
 	);
 	let tree = component.toJSON();
 
