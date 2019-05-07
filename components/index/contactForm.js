@@ -29,13 +29,33 @@ class ContactForm extends Component {
 	render() {
 		return (
 			<div>
-				<div>
-					<input onChange={this.handleInputChanges} type="text" name="name"/>
-					<input onChange={this.handleInputChanges} type="email" name="email"/>
-					<input onChange={this.handleInputChanges} type="number" name="phoneNumber"/>
-					<textarea onChange={this.handleInputChanges} name="comment"></textarea>
+				<div id="contact-container">
+					<h3>Contactanos</h3>
+					<input placeholder="Nombre" onChange={this.handleInputChanges} type="text" name="name"/>
+					<input placeholder="Correo" onChange={this.handleInputChanges} type="email" name="email"/>
+					<input placeholder="Numero de Telefono" onChange={this.handleInputChanges} type="number" name="phoneNumber"/>
+					<textarea placeholder="Comentario" onChange={this.handleInputChanges} name="comment"></textarea>
 					<button onClick={this.send}>Enviar</button>
 				</div>
+				<style jsx="true">{`
+					#contact-container {
+						width: 100%;
+					}
+					#contact-container input,
+					#contact-container textarea,
+					#contact-container button
+					{
+						display: block;
+						margin: 20px auto;
+						width: 30%;
+						height: 30px;
+					}
+					#contact-container h3 {
+						text-align: center;
+						font-size: 60px;
+						margin: 10px 0 50px;
+					}
+				`}</style>
 			</div>
 		);
 	}
