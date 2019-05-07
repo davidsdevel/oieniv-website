@@ -64,7 +64,7 @@ exports[`Render MissionVisionObjective without crash 1`] = `
     </div>
   </div>
   <style
-    jsx={true}
+    jsx="true"
   >
     
 					#mission-main {
