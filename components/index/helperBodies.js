@@ -1,5 +1,5 @@
 import React from "react";
-import {HelperBody} from "Components/index";
+import HelperBody from "./helperBody";
 
 const HelperBodies = () => (
 	<div>

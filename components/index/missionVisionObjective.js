@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {MissionVisionObjectiveChild} from "Components/index";
+import MissionVisionObjectiveChild from "./missionVisionObjectiveChild";
 
 const data = [{
 	title:"Misión",

@@ -11,20 +11,9 @@ module.exports = {
 		};
 	},
 	webpack: config => {
-		const {alias} = config.resolve;
-
 		// Fixes npm packages that depend on `fs` module
 		config.node = {
 			fs: "empty"
-		};
-
-		/*
-		 * Añadido alias para los componentes
-		 * Ejemplo: import ComponentName from "Component/nav";
-		 */
-		config.resolve.alias = {
-			...alias,
-			Components: resolve("./components")
 		};
 		return config;
 	}
