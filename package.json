@@ -6,9 +6,7 @@
     "start": "next start",
     "generate": "next build && next export",
     "test": "jest",
-    "lint": "eslint .",
-    "pre-commit": "eslint .",
-    "pre-push": "jest"
+    "lint": "eslint ."
   },
   "dependencies": {
     "next": "^8.1.0",
