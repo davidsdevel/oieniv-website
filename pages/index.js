@@ -14,10 +14,16 @@ const Home = () => (
 		<Nav />
 		<LandingPage/>
 		<MissionVisionObjective />
+		<hr/>
 		<HelperBodies/>
 		<ContactForm />
 		<Slogan/>
 		<Footer/>
+		<style jsx>{`
+			hr {
+				border: .5px solid rgba(0 ,0 ,0, .1)
+			}
+		`}</style>
 	</div>
 );
 

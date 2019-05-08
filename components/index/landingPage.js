@@ -10,7 +10,7 @@ const LandingPage = () => (
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<style jsx="true">{`
+		<style jsx>{`
 #landing-page-container {
 	background-image: url(/static/images/OIENIV%20-%20columna%20y%20baluarte%20de%20la%20verdad.jpg);
 	height: 600px;

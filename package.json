@@ -17,6 +17,7 @@
   "version": "1.0.0",
   "main": "next.config.js",
   "devDependencies": {
+    "@babel/plugin-transform-regenerator": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "babel-jest": "^24.7.1",

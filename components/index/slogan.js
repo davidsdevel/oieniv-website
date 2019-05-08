@@ -10,11 +10,13 @@ const Slogan = () => (
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<style jsx="true">{`
+		<style jsx>{`
 #slogan-container {
 	width: 80%;
 	padding: 50px 10%;
 	text-align: center;
+	background: #f7f7f7;
+	color: gray;
 }
 #slogan-container #slogan {
 	font-size: 35px;

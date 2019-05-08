@@ -45,6 +45,7 @@ const data = [
 ];
 
 const childs = data.map(({name, content, logoURL}, i) => ( <HelperBody key={`Organos Auxiliar-${i}`} name={name} content={content} logoURL={logoURL}/>));
+
 const HelperBodies = () => (
 	<div id="helper-bodies-container">
 		<h3 className="sub-titles">Organos Auxiliares de OIENIV</h3>
@@ -55,10 +56,16 @@ const HelperBodies = () => (
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		{childs}
-		<style jsx="true">{`
+		<style jsx global>{`
 #helper-bodies-container {
-	with: 80%;
+	width: 80%;
 	padding: 50px 10%;
+	background: #f7f7f7;
+}
+#helper-bodies-container > p {
+	text-align: center;
+	font-size: 20px;
+	color: gray;
 }
 #helper-bodies-container .helper-body {
 	width: 20%;
