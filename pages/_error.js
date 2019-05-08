@@ -1,18 +1,19 @@
 import React from "react";
 import Link from "next/link";
 import Nav from "../components/nav";
+import {withRouter} from "next/router";
 import Head from "../components/head";
 import Footer from "../components/footer";
 import { object } from "prop-types"; 
 
-const ErrorPage = ({url}) => (
+const ErrorPage = ({router}) => (
 	<div>
-		<Head title="Ups. Ha pasado un error" />
+		<Head title="Ups. Ha pasado un error" url={router.asPath}/>
 		<Nav/>
 		<div id="main">
 			<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="#DBE1EC" viewBox="0 0 48 48"><path d="M22 30h4v4h-4zm0-16h4v12h-4zm1.99-10C12.94 4 4 12.95 4 24s8.94 20 19.99 20S44 35.05 44 24 35.04 4 23.99 4zM24 40c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16z"/></svg>
 			<h3>Ups. Lo Sentimos</h3>
-			<p>La url <b>{url.asPath}</b> no se encuentra en el sitio<br/>
+			<p>La url <b>{router.asPath}</b> no se encuentra en el sitio<br/>
 				Regrese mas tarde.<br/><br/>
 				<Link prefetch href="/">
 					<a>
@@ -53,7 +54,7 @@ const ErrorPage = ({url}) => (
 );
 
 ErrorPage.propTypes = {
-	url: object
+	router: object
 };
 
-export default ErrorPage;
+export default withRouter(ErrorPage);
