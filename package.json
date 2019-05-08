@@ -5,7 +5,7 @@
     "build": "next build",
     "start": "next start",
     "generate": "next build && next export",
-    "test": "jest",
+    "test": "eslint .",
     "lint": "eslint ."
   },
   "dependencies": {
