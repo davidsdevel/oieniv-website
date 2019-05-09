@@ -35,7 +35,6 @@ class ContactForm extends Component {
 	handleInputChanges({target}) {
 		const {name, type} = target;
 
-
 		const value = type === "checkbox" ? target.checked : target.value;
 
 		if (name === "comment") {
@@ -47,7 +46,6 @@ class ContactForm extends Component {
 		}
 		else
 			this.setState({[name]: value });
-
 	}
 	render() {
 		return (

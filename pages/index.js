@@ -10,7 +10,7 @@ import Slogan from "../components/index/slogan";
 
 const Home = () => (
 	<div>
-		<Head title="OIENIV - Organizacion Cristiana en Venezuela" />
+		<Head title="OIENIV - Organizacion Cristiana en Venezuela"/>
 		<Nav />
 		<LandingPage/>
 		<MissionVisionObjective />
