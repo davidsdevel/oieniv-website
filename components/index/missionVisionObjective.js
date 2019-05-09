@@ -27,19 +27,13 @@ const data = [{
 }];
 
 
-const Child = () => (
-	<div>{
-		data.map(({title, content, iconURL}) => (
-			<MissionVisionObjectiveChild key={title.toLowerCase()} title={title} content={content} iconURL={iconURL}/>
-		))
-	}</div>
-);
+const Child = data.map(({title, content, iconURL}) => (<MissionVisionObjectiveChild key={title.toLowerCase()} title={title} content={content} iconURL={iconURL}/>));
 
 class MissionVisionObjective extends Component {
 	render() {
 		return (
 			<div id="mission-main">
-				<Child/>
+				{Child}
 				<style jsx global>{`
 #mission-main {
 	padding: 50px 0;
