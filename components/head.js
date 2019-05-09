@@ -14,10 +14,10 @@ const Head = props => (
 			name="description"
 			content={props.description || defaultDescription}
 		/>
-		<meta name="og:locale" content="es_LA" />
-		<meta name="og:site_name" content={props.title} />
-		<meta name="og:type" content="website" />
-		<meta name="og:app_id" content="433918784089260" />
+		<meta property="og:locale" content="es_LA" />
+		<meta property="og:site_name" content={props.title} />
+		<meta property="og:type" content="website" />
+		<meta property="fb:app_id" content="433918784089260" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
 		<link rel="apple-touch-icon" href="/static/touch-icon.png" />
