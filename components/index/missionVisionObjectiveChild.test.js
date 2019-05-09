@@ -1,18 +1,24 @@
+/*eslint-env jest*/
 import React from "react";
 import MissionVisionObjectiveChild from "./missionVisionObjectiveChild";
+import {shallow} from "enzyme";
 import renderer from "react-test-renderer";
 
-/*eslint-disable-next-line*/
-test("Render MissionVisionObjectiveChild without crash", () => {
-	const component = renderer.create(
-		<MissionVisionObjectiveChild title="Mision" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum" iconURL="https://someURL.com"/>,
-	);
-	let tree = component.toJSON();
+describe("MissionVisionObjectiveChild with Enzyme", () => {
+	it("render MissionVisionObjectiveChild without crash", () => {
+		const wrapper = shallow(<MissionVisionObjectiveChild title="Mision" content="Hola Mundo" iconURL="https://someURL.com"/>);
+	
+		expect(wrapper.find("h2").text()).toEqual("Mision");
+		expect(wrapper.find("p").text()).toEqual("Hola Mundo");
+		expect(wrapper.find("img").prop("src")).toEqual("https://someURL.com");
+	});
+});
 
-	expect(tree).toMatchSnapshot(); // eslint-disable-line
+describe("MissionVisionObjectiveChild with Snapshot", () => {
+	it("render MissionVisionObjectiveChild without crash", () => {
+		const component = renderer.create(<MissionVisionObjectiveChild title="Mision" content="Hola Mundo" iconURL="https://someURL.com"/>);
+		const tree = component.toJSON();
+
+		expect(tree).toMatchSnapshot();
+	});
 });

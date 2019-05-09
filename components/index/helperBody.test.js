@@ -1,13 +1,24 @@
+/*eslint-env jest*/
 import React from "react";
 import HelperBody from "./helperBody";
+import {shallow} from "enzyme";
 import renderer from "react-test-renderer";
 
-/*eslint-disable-next-line*/
-test("Render HelperBody without crash", () => {
-	const component = renderer.create(
-		<HelperBody name="Pronani" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" logoURL="/static/images/test-logo.png"/>
-	);
-	let tree = component.toJSON();
+describe("HelperBody with Enzyme", () => {
+	it("Render HelperBody without crash", () => {
+		const wrapper = shallow(<HelperBody name="Pronani" content="Hola Mundo" logoURL="/static/images/test-logo.png"/>);
+	
+		expect(wrapper.find("p").text()).toEqual("Hola Mundo");
+		expect(wrapper.find("h4").text()).toEqual("Pronani");
+		expect(wrapper.find("img").prop("src")).toEqual("/static/images/test-logo.png");
+	});
+});
 
-	expect(tree).toMatchSnapshot(); // eslint-disable-line
+describe("HelperBody with Snapshot", () => {
+	it("Render HelperBody without crash", () => {
+		const component = renderer.create(<HelperBody name="Pronani" content="Hola Mundo" logoURL="/static/images/test-logo.png"/>);
+		const tree = component.toJSON();
+
+		expect(tree).toMatchSnapshot();
+	});
 });

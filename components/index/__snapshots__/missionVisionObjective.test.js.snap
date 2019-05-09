@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MissionVisionObjective with Snapshot render without crash 1`] = `
+<div
+  className="jsx-1987260425"
+  id="mission-main"
+>
+  <div
+    className="mission-container"
+  >
+    <div
+      className="image-circle"
+    >
+      <img
+        alt="OIENIV Misión"
+        src="/static/images/flag1.svg"
+      />
+    </div>
+    <h2>
+      Misión
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+    </p>
+  </div>
+  <div
+    className="mission-container"
+  >
+    <div
+      className="image-circle"
+    >
+      <img
+        alt="OIENIV Visión"
+        src="/static/images/rocket.svg"
+      />
+    </div>
+    <h2>
+      Visión
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+    </p>
+  </div>
+  <div
+    className="mission-container"
+  >
+    <div
+      className="image-circle"
+    >
+      <img
+        alt="OIENIV Objetivo"
+        src="/static/images/eye.svg"
+      />
+    </div>
+    <h2>
+      Objetivo
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+    </p>
+  </div>
+</div>
+`;
