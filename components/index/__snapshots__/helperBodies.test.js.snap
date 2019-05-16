@@ -75,10 +75,10 @@ exports[`HelperBodies with Snapshot render without crash 1`] = `
     className="helper-body"
   >
     <h4>
-      Anjeiv
+      Vemiv
     </h4>
     <img
-      alt="Organos Auxiliares - Anjeiv - OIENIV"
+      alt="Organos Auxiliares - Vemiv - OIENIV"
       src="/static/images/test-logo.png"
     />
     <p>
@@ -89,10 +89,10 @@ exports[`HelperBodies with Snapshot render without crash 1`] = `
     className="helper-body"
   >
     <h4>
-      Andeiv
+      Academia de OIENIV
     </h4>
     <img
-      alt="Organos Auxiliares - Andeiv - OIENIV"
+      alt="Organos Auxiliares - Academia de OIENIV - OIENIV"
       src="/static/images/test-logo.png"
     />
     <p>
@@ -103,24 +103,10 @@ exports[`HelperBodies with Snapshot render without crash 1`] = `
     className="helper-body"
   >
     <h4>
-      Copaso
+      La Voz de OIENIV
     </h4>
     <img
-      alt="Organos Auxiliares - Copaso - OIENIV"
-      src="/static/images/test-logo.png"
-    />
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-  </div>
-  <div
-    className="helper-body"
-  >
-    <h4>
-      Pronani
-    </h4>
-    <img
-      alt="Organos Auxiliares - Pronani - OIENIV"
+      alt="Organos Auxiliares - La Voz de OIENIV - OIENIV"
       src="/static/images/test-logo.png"
     />
     <p>
