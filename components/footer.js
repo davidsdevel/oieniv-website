@@ -46,21 +46,21 @@ const Footer = () => (
 			<ul>
 				<li>
 					<Link href="https://www.facebook.com/oieniv">
-						<a target="_blank">
+						<a rel="noreferrer" target="_blank">
 							<img src="/static/images/oieniv-facebook-logo.png" alt="OIENIV Facebook Logo"/>
 						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="https://www.twitter.com/oieniv">
-						<a target="_blank">
+						<a rel="noreferrer" target="_blank">
 							<img src="/static/images/oieniv-twitter-logo.png" alt="OIENIV Twitter Logo"/>
 						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="https://www.youtube.com/oieniv">
-						<a target="_blank">
+						<a rel="noreferrer" target="_blank">
 							<img id="footer-youtube-logo" src="/static/images/oieniv-youtube-logo.png" alt="OIENIV Youtube Logo"/>
 						</a>
 					</Link>
@@ -68,7 +68,7 @@ const Footer = () => (
 			</ul>
 		</div>
 		<ul id="footer-copyright">
-			<li>Desarrollado por <Link href="https://www.facebook.com/davidsdevel"><a target="_blank">David&apos;s Devel</a></Link></li>
+			<li>Desarrollado por <Link href="https://www.facebook.com/davidsdevel"><a rel="noreferrer" target="_blank">David&apos;s Devel</a></Link></li>
 			<li>
 				<Link prefetch href="/terminos">
 					<a>Terminos de Servicio</a>

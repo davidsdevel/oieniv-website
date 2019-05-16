@@ -1,28 +1,20 @@
 import React, {Component} from "react";
 import MissionVisionObjectiveChild from "./missionVisionObjectiveChild";
+import Link from "next/link";
 
 const data = [{
 	title:"Misión",
-	content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat.`,
+	content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
 	iconURL: "/static/images/flag1.svg"
 },
 {
 	title:"Visión",
-	content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat.`,
+	content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
 	iconURL: "/static/images/rocket.svg"
 },
 {
 	title:"Objetivo",
-	content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat.`,
+	content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
 	iconURL: "/static/images/eye.svg"
 }];
 
@@ -34,6 +26,9 @@ class MissionVisionObjective extends Component {
 		return (
 			<div id="mission-main">
 				{Child}
+				<Link href="/nosotros" prefetch>
+					<a>Conoce más acerca de nosotros</a>
+				</Link>
 				<style jsx global>{`
 #mission-main {
 	padding: 50px 0;

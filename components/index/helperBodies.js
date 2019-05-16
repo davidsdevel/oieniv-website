@@ -23,22 +23,17 @@ const data = [
 		logoURL: "/static/images/test-logo.png"
 	},
 	{
-		name: "Anjeiv",
+		name: "Vemiv",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		logoURL: "/static/images/test-logo.png"
 	},
 	{
-		name: "Andeiv",
+		name: "Academia de OIENIV",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		logoURL: "/static/images/test-logo.png"
 	},
 	{
-		name: "Copaso",
-		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/static/images/test-logo.png"
-	},
-	{
-		name: "Pronani",
+		name: "La Voz de OIENIV",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		logoURL: "/static/images/test-logo.png"
 	}
