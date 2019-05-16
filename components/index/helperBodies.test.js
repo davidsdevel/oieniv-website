@@ -8,7 +8,7 @@ describe("HelperBodies with Enzyme", () => {
 	it("render eight HelperBody component", () => {
 		const wrapper = shallow(<HelperBodies/>);
 	
-		expect(wrapper.find("HelperBody")).toHaveLength(8);
+		expect(wrapper.find("HelperBody")).toHaveLength(7);
 	});
 });
 
