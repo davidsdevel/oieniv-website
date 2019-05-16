@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import MissionVisionObjectiveChild from "./missionVisionObjectiveChild";
-import Link from "next/link";
 
 const data = [{
 	title:"Misión",
@@ -26,9 +25,6 @@ class MissionVisionObjective extends Component {
 		return (
 			<div id="mission-main">
 				{Child}
-				<Link href="/nosotros" prefetch>
-					<a>Conoce más acerca de nosotros</a>
-				</Link>
 				<style jsx global>{`
 #mission-main {
 	padding: 50px 0;
