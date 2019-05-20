@@ -31,11 +31,15 @@ class Nav extends Component {
 	}
 	componentDidMount() {
 		this.setState({
-					scrollTop:document.documentElement.scrollTop
+			scrollTop:document.documentElement.scrollTop
 		});
-		document.body.onscroll = () => this.setState({
+		document.body.onscroll = () => {
+			this.setState({
 				scrollTop:document.documentElement.scrollTop
 			});
+			if (this.state.scrollTop < 700)
+				this.setState({viewFixedMenu: false})
+		}
 		document.body.onclick = () => this.setState({
 			viewStaticMenu: false,
 			viewFixedMenu: false
