@@ -14,8 +14,6 @@ const links = [
 	return link;
 });
 
-var timeout;
-
 class Nav extends Component {
 	constructor() {
 		super();
@@ -38,8 +36,8 @@ class Nav extends Component {
 				scrollTop:document.documentElement.scrollTop
 			});
 			if (this.state.scrollTop < 700)
-				this.setState({viewFixedMenu: false})
-		}
+				this.setState({viewFixedMenu: false});
+		};
 		document.body.onclick = () => this.setState({
 			viewStaticMenu: false,
 			viewFixedMenu: false
