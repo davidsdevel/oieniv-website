@@ -73,6 +73,7 @@ class ContactForm extends Component {
 						background: url(/static/images/OIENIV%20-%20contactanos.jpg);
 						padding: 50px 0 100px 0;
 						background-position: center;
+						background-size: cover;
 					}
 					#contact-container {
 						width: 100%;

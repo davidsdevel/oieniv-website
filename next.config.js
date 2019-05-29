@@ -2,6 +2,7 @@ const fs = require("fs");
 const {promisify} = require("util");
 const {join} = require("path");
 const copyFile = promisify(fs.copyFile);
+const helperBodies = require("./data/helperBodies.json");
 
 /**
 
@@ -22,9 +23,7 @@ module.exports = {
 			"/": { page: "/" },
 			"/anjeiv": {
 				page: "/helper",
-				query: {
-					title: "Anjeiv"
-				}
+				query: helperBodies.anjeiv
 			}
 		};
 		
