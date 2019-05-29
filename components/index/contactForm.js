@@ -55,7 +55,7 @@ class ContactForm extends Component {
 					<input placeholder="Nombre" onChange={this.handleInputChanges} value={this.state.name} type="text" name="name"/>
 					<input placeholder="Correo" onChange={this.handleInputChanges} value={this.state.email} type="email" name="email"/>
 					<input placeholder="Numero de Telefono" onChange={this.handleInputChanges} value={this.state.phone} type="phone" name="phoneNumber"/>
-					<div style={{width: "calc(30% + 60px)", margin: "auto", position: "relative"}}>
+					<div id="textarea-container">
 						<textarea
 							placeholder="Comentario"
 							onChange={this.handleInputChanges}
@@ -101,6 +101,11 @@ class ContactForm extends Component {
 						color: white;
 						outline: none;
 					}
+					#textarea-container {
+						width: calc(30% + 60px);
+						margin: auto;
+						position: relative;
+					}
 					#contact-container textarea {
 						height: 200px;
 						border-radius: 15px;
@@ -131,6 +136,25 @@ class ContactForm extends Component {
 						font-size: 15px;
 
 						transition: ease .6s;
+					}
+					@media screen and (max-width: 480px) {
+						#contact-image {
+							padding: 25px 0 50px 0;
+						}
+						#contact-container input,
+						#contact-container textarea,
+						#contact-container button {
+							width: 75%;
+						}
+						#textarea-container {
+							width: auto;
+						}
+						#contact-container button {
+							margin-top: 80px;
+						}
+						#contact-container #letters-count {
+							right: 30px
+						}
 					}
 				`}</style>
 			</div>

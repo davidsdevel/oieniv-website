@@ -21,7 +21,19 @@ const links = [
 	{
 		name: "Pronani",
 		url: "/pronani"
-	}	
+	},
+	{
+		name: "Vemiv",
+		url: "/vemiv"
+	},
+	{
+		name: "AEVO",
+		url: "/aevo"
+	},
+	{
+		name: "La Voz de OIENIV",
+		url: "/lavozdeoieniv"
+	}
 ];
 
 
@@ -137,6 +149,29 @@ const Footer = () => (
 			}
 			footer #footer-copyright li {
 				font-size: 12px;
+			}
+			@media screen and (max-width: 480px) {
+				footer {
+					height: 500px;
+				}
+				footer #footer-links {
+					margin: 20px 0;
+				}
+				footer #footer-links li {
+					margin: 2.5px 0;
+				}
+				footer #footer-copyright {
+					display: block;
+				}
+				footer #footer-copyright li {
+					margin: 10px;
+				}
+				footer #footer-follow-us {
+					bottom: 200px;
+				}
+				footer #footer-follow-us ul {
+					width: 150px;
+				}
 			}
 		`}</style>
 	</footer>

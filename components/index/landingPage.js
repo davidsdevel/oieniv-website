@@ -3,8 +3,8 @@ import React from "react";
 const LandingPage = () => (
 	<div id="landing-page-container">
 		<h1 id="title">OIENIV</h1>
-		<p id="full-name"><b>O</b>rganizacion de <b>I</b>glesias <b>E</b>vangelicas <b>N</b>acionales <b>I</b>ndependientes de <b>V</b>enezuela</p>
 		<p id="slogan">Columna y Baluarte de la Verdad</p>
+		<p id="full-name"><b>O</b>rganizacion de <b>I</b>glesias <b>E</b>vangelicas <b>N</b>acionales <b>I</b>ndependientes de <b>V</b>enezuela</p>
 		<p id="mini-history">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -38,6 +38,24 @@ const LandingPage = () => (
 b {
 	color: white;
 	font-size: 28px;
+}
+@media screen and (max-width: 480px) {
+	#title {
+		margin: 40px auto;
+	}
+	#slogan {
+		margin: 40px auto 120px auto;
+	}
+	#landing-page-container {
+		width: 90%;
+		padding: 50px 5%;
+	}
+	#mini-history {
+		display: none;
+	}
+	#full-name {
+		font-size: 18px;
+	}
 }
 		`}</style>
 	</div>

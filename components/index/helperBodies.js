@@ -5,7 +5,7 @@ const data = [
 	{
 		name: "Anjeiv",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/static/images/test-logo.png"
+		logoURL: "/static/images/Anjeiv%20-%20logo.jpg"
 	},
 	{
 		name: "Andeiv",
@@ -28,7 +28,7 @@ const data = [
 		logoURL: "/static/images/test-logo.png"
 	},
 	{
-		name: "Academia de OIENIV",
+		name: "AEVO",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		logoURL: "/static/images/test-logo.png"
 	},
@@ -57,24 +57,29 @@ const HelperBodies = () => (
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		{childs}
 		<style jsx global>{`
-#helper-bodies-container {
-	width: 80%;
-	padding: 50px 10%;
-	background: #f7f7f7;
-}
-#helper-bodies-container > p {
-	text-align: center;
-	font-size: 20px;
-	color: gray;
-}
-#helper-bodies-container .helper-body {
-	width: 20%;
-	display: inline-block;
-	margin: 50px 2.5%;
-}
-#helper-bodies-container .helper-body img {
-	width: 100%;
-}
+			#helper-bodies-container {
+				width: 80%;
+				padding: 50px 10%;
+				background: #f7f7f7;
+			}
+			#helper-bodies-container > p {
+				text-align: center;
+				font-size: 20px;
+				color: gray;
+			}
+			#helper-bodies-container .helper-body {
+				width: 20%;
+				display: inline-block;
+				margin: 50px 2.5%;
+			}
+			#helper-bodies-container .helper-body img {
+				width: 100%;
+			}
+			@media screen and (max-width: 480px) {
+				#helper-bodies-container .helper-body {
+					width: 45%;
+				}	
+			}
 		`}</style>
 	</div>
 );

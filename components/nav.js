@@ -177,6 +177,18 @@ class Nav extends Component {
 					position: fixed;
 					transition: ease .6s;
 				}
+				@media screen and (max-width: 480px) {
+					#static, #fixed {
+						display: none;
+					}
+					#mobile-static {
+						padding: 10px;
+					}
+					#mobile-static li img {
+						width: 50px;
+						height: 50px;
+					}
+				}
 			`}</style>
 		</nav>);
 	}

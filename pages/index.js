@@ -3,6 +3,7 @@ import Head from "../components/head";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import LandingPage from "../components/index/landingPage";
+import MobileDescription from "../components/index/mobileDescription";
 import MissionVisionObjective from "../components/index/missionVisionObjective";
 import HelperBodies from "../components/index/helperBodies";
 import ContactForm from "../components/index/contactForm";
@@ -13,6 +14,7 @@ const Home = () => (
 		<Head title="OIENIV - Organizacion Cristiana en Venezuela"/>
 		<Nav />
 		<LandingPage/>
+		<MobileDescription/>
 		<MissionVisionObjective />
 		<hr/>
 		<HelperBodies/>

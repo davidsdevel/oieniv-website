@@ -30,8 +30,14 @@ class Helper extends Component {
 		return (
 			<div>
 				<Head title={title} />
-				<Menu/>
-				<LandingPage title={title} extendedTitle={extendedTitle} description={description} backgroundURL={background} logoURL={logo}/>
+				<Nav/>
+				<LandingPage
+				 title={title}
+				 extendedTitle={extendedTitle}
+				 description={description}
+				 backgroundURL={background}
+				 logoURL={logo}
+				/>
 				<Footer/>
 			</div>
 		);

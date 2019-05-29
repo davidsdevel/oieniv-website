@@ -6,7 +6,7 @@ const MissionVisionObjectiveChild = ({iconURL, title, content}) => (
 		<div className="image-circle">
 			<img src={iconURL} alt={`OIENIV ${title}`}/>
 		</div>
-		<h2>{title}</h2>
+		<h3>{title}</h3>
 		<p>{content}</p>
 	</div>
 );

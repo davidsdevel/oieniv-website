@@ -11,10 +11,19 @@ function GenerateExtendedTitleWithCamelCase({extendedTitle}) {
 	});
 }
 
-const LandingPage = ({minimizedTitle, extendedTitle, description, logoURL, backgroundURL}) => (
-	<div>
-		<h1>{minimizedTitle}</h1>
-		<p><GenerateExtendedTitleWithCamelCase extendedTitle={extendedTitle}/></p>
+const LandingPage = ({title, extendedTitle, description, logoURL, backgroundURL}) => (
+	<div id="main">
+		<h1>{title}</h1>
+		<p>
+			<GenerateExtendedTitleWithCamelCase extendedTitle={extendedTitle}/>
+		</p>
+		<p>{description}</p>
+		<img src={backgroundURL}/>
+		<style jsx>{`
+			#main {
+				text-align: center;
+			}
+		`}</style>
 	</div>
 );
 

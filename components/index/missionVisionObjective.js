@@ -29,7 +29,7 @@ class MissionVisionObjective extends Component {
 #mission-main {
 	padding: 50px 0;
 }
-.mission-container h2 {
+.mission-container h3 {
 	color: #4c4c4c;
 	font-size: 35px;
 	margin: 10px auto 30px auto;
@@ -53,6 +53,20 @@ class MissionVisionObjective extends Component {
 	padding: 30px;
 	margin: auto;
 	border-radius: 50%;
+}
+@media screen and (max-width: 480px) {
+	#mission-main {
+		width: 90%;
+		padding: 0 5%;
+	}
+	.mission-container {
+		display: block;
+		width: 100%;
+		margin: 50px 0;
+	}
+	.image-circle {
+		margin: auto;
+	}
 }
 				`}</style>
 			</div>
