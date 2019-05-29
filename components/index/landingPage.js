@@ -15,6 +15,7 @@ const LandingPage = () => (
 	background-image: url(/static/images/OIENIV%20-%20columna%20y%20baluarte%20de%20la%20verdad.jpg);
 	height: 600px;
 	color: white;
+	background-size: cover;
 	text-align: center;
 	padding: 50px 5%;
 }
