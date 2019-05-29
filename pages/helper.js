@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Head from "../components/head";
-import Menu from "../components/nav";
+import Nav from "../components/nav";
 import Footer from "../components/footer";
 import {string} from "prop-types";
 
@@ -16,7 +16,8 @@ class Helper extends Component {
 		return (
 			<div>
 				<Head title={this.props.title} />
-				<Menu/>
+				<Nav/>
+				
 				<h1>{this.props.title}</h1>
 				<Footer/>
 			</div>

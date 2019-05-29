@@ -8,7 +8,8 @@ const links = [
 	{ href: "/andeiv", label: "Andeiv" },
 	{ href: "/copaso", label: "Copaso" },
 	{ href: "/pronani", label: "Pronani" },
-	{ href: "/vemiv", label: "Vemiv" }
+	{ href: "/vemiv", label: "Vemiv" },
+	{ href: "/primerosauxilios", label: "Primeros Auxilios" }
 ].map(link => {
 	link.key = `nav-link-${link.href}-${link.label}`;
 	return link;
@@ -75,6 +76,11 @@ class Nav extends Component {
 					<Link href="/nosotros" prefetch>
 						<a>Nosotros</a>
 					</Link>
+				</li>
+			</ul>
+			<ul id="mobile-static">
+				<li>
+					<img src="/static/images/menu.svg"/>
 				</li>
 			</ul>
 			<ul className="menu" id="fixed" style={{top: this.state.scrollTop > 700 ? 0 : "-80px"}}>
