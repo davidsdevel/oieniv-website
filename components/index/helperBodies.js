@@ -4,47 +4,55 @@ import HelperBody from "./helperBody";
 const data = [
 	{
 		name: "Anjeiv",
+		url: "/anjeiv",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		logoURL: "/static/images/Anjeiv%20-%20logo.jpg"
 	},
 	{
 		name: "Andeiv",
+		url: "/andeiv",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		logoURL: "/static/images/test-logo.png"
 	},
 	{
 		name: "Copaso",
+		url: "/copaso",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		logoURL: "/static/images/test-logo.png"
 	},
 	{
 		name: "Pronani",
+		url: "/pronani",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		logoURL: "/static/images/test-logo.png"
 	},
 	{
 		name: "Vemiv",
+		url: "/vemiv",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/static/images/test-logo.png"
+		logoURL: "/static/images/Vemiv%20-%20logo.jpg"
 	},
 	{
 		name: "AEVO",
+		url: "/aevo",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		logoURL: "/static/images/test-logo.png"
 	},
 	{
 		name: "La Voz de OIENIV",
+		url: "/lavozdeoieniv",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/static/images/test-logo.png"
+		logoURL: "/static/images/lavozdeoieniv%20-%20logo.png"
 	},
 	{
 		name: "Primeros Auxilios",
+		url: "/primerosauxilios",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		logoURL: "/static/images/test-logo.png"
 	}
 ];
 
-const childs = data.map(({name, content, logoURL}, i) => ( <HelperBody key={`Organos Auxiliar-${i}`} name={name} content={content} logoURL={logoURL}/>));
+const childs = data.map(({url, name, content, logoURL}, i) => ( <HelperBody key={`Organos Auxiliar-${i}`} url={url} name={name} content={content} logoURL={logoURL}/>));
 
 const HelperBodies = () => (
 	<div id="helper-bodies-container">

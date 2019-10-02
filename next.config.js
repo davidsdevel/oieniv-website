@@ -24,6 +24,10 @@ module.exports = {
 			"/anjeiv": {
 				page: "/helper",
 				query: helperBodies.anjeiv
+			},
+			"/lavozdeoieniv": {
+				page: "/helper",
+				query: helperBodies.lavozdeoieniv
 			}
 		};
 		

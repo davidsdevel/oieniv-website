@@ -17,7 +17,6 @@ const data = [{
 	iconURL: "/static/images/eye.svg"
 }];
 
-
 const Child = data.map(({title, content, iconURL}) => (<MissionVisionObjectiveChild key={title.toLowerCase()} title={title} content={content} iconURL={iconURL}/>));
 
 class MissionVisionObjective extends Component {

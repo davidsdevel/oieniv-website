@@ -38,6 +38,8 @@ class Nav extends Component {
 			});
 			if (this.state.scrollTop < 700)
 				this.setState({viewFixedMenu: false});
+			else
+				this.setState({viewStaticMenu: false});
 		};
 		document.body.onclick = () => this.setState({
 			viewStaticMenu: false,
@@ -177,12 +179,16 @@ class Nav extends Component {
 					position: fixed;
 					transition: ease .6s;
 				}
+				#mobile-static{
+					display: none;
+				}
 				@media screen and (max-width: 480px) {
 					#static, #fixed {
 						display: none;
 					}
 					#mobile-static {
 						padding: 10px;
+						display: block;
 					}
 					#mobile-static li img {
 						width: 50px;

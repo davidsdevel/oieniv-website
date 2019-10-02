@@ -11,7 +11,8 @@
   "dependencies": {
     "next": "^8.1.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "express": "^4.16.4"
   },
   "description": "This project was bootstrapped with [Create Next App](https://github.com/segmentio/create-next-app).",
   "version": "1.0.0",
@@ -31,6 +32,14 @@
     "react-test-renderer": "^16.8.6"
   },
   "keywords": [],
-  "author": "David's Devel <djgm1206@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/davidsdevel/oieniv-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidsdevel/oieniv-website.git"
+  },
+  "homepage": "https://www.oieniv.org",
+  "author": "David's Devel <davidsdevel@gmail.com>",
   "license": "ISC"
 }

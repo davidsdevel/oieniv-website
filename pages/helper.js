@@ -4,6 +4,9 @@ import Nav from "../components/nav";
 import Footer from "../components/footer";
 import {string} from "prop-types";
 import LandingPage from "../components/helper/landingPage";
+import President from "../components/helper/president";
+import Description from "../components/helper/description";
+import Photos from "../components/helper/photos";
 
 class Helper extends Component {
 	static async getInitialProps({query}) {
@@ -21,6 +24,7 @@ class Helper extends Component {
 			title,
 			extendedTitle,
 			description,
+			background,
 			logo: newLogo
 		};
 	}
@@ -32,12 +36,15 @@ class Helper extends Component {
 				<Head title={title} />
 				<Nav/>
 				<LandingPage
-				 title={title}
-				 extendedTitle={extendedTitle}
-				 description={description}
-				 backgroundURL={background}
-				 logoURL={logo}
+					title={title}
+					extendedTitle={extendedTitle}
+					description={description}
+					backgroundURL={background}
+					logoURL={logo}
 				/>
+				<President/>
+				<Description/>
+				<Photos/>
 				<Footer/>
 			</div>
 		);

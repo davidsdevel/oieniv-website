@@ -103,7 +103,6 @@ const Footer = () => (
 				color: #ccc;
 				padding: 80px 10%;
 				position: relative;
-
 				transition: ease .2s;
 			}
 			a {

@@ -11,18 +11,19 @@ const mobileDescription = () => (
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<hr/>
 		<style jsx>{`
-			#mobile-history {
+			#mobile-description {
 				display: none;
 			}
 			@media screen and (max-width: 480px) {
 				#mobile-description {
+					display: block;
 					background: #f7f7f7;
-					padding: 20px 5% 0 5%;
+					padding: 20px 0 0 0;
 				}
 				#mobile-history {
-					display: block;
 					text-align: center;
 					margin-bottom: 20px;
+					padding: 0 5%;
 				}
 				h2 {
 					font-size: 40px;

@@ -1,10 +1,15 @@
 import React from "react";
 import {string} from "prop-types";
+import Link from "next/link";
 
-const HelperBody = ({logoURL, name, content}) => (
+const HelperBody = ({logoURL, name, content, url}) => (
 	<div className="helper-body">
 		<h4>{name}</h4>
-		<img src={logoURL} alt={`Organos Auxiliares - ${name} - OIENIV`}/>
+		<Link href={url} prefetch>
+			<a>
+				<img src={logoURL} alt={`Organos Auxiliares - ${name} - OIENIV`}/>
+			</a>
+		</Link>
 		<p>{content}</p>
 	</div>
 );
@@ -12,7 +17,8 @@ const HelperBody = ({logoURL, name, content}) => (
 HelperBody.propTypes = {
 	logoURL: string,
 	name: string,
-	content: string
+	content: string,
+	url: string
 };
 
 export default HelperBody;

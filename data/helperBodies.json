@@ -3,7 +3,20 @@
 		"title": "Anjeiv",
 		"extendedTitle": "Asociación Nacional de Jovenes Evangelicos Independientes de Venezuela",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"logo":"/static/images/Anjeiv%20-%20logo.jpg",
-		"background": "/static/images/OIENIV%20-%20columna y baluarte de la verdad.jpg"
+		"logo":"/static/images/Anjeiv%20-%20landing%20logo.png",
+		"background": "/static/images/Anjeiv%20-%20landing%20background.jpg",
+		"president": {
+			"name": "Adrián Cedeño"
+		}
+	},
+	"lavozdeoieniv": {
+		"title": "La Voz de OIENIV",
+		"extendedTitle": "La Radio donde la Protagonista es La Palabra de Dios",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"logo":"/static/images/lavozdeoieniv%20-%20landing%20logo.png",
+		"background": "/static/images/La%20Voz%20de%20OIENIV%20-%20landing%20background.jpg",
+		"president": {
+			"name": "Agustín Sanchez"
+		}
 	}
 }
