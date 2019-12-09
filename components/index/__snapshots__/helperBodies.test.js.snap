@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HelperBodies with Snapshot render without crash 1`] = `
+<div
+  className="jsx-563012480"
+  id="helper-bodies-container"
+>
+  <h3
+    className="jsx-563012480 sub-titles"
+  >
+    Organos Auxiliares de OIENIV
+  </h3>
+  <p
+    className="jsx-563012480"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <div
+    className="helper-body"
+  >
+    <h4>
+      Anjeiv
+    </h4>
+    <img
+      alt="Organos Auxiliares - Anjeiv - OIENIV"
+      src="/static/images/test-logo.png"
+    />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+  <div
+    className="helper-body"
+  >
+    <h4>
+      Andeiv
+    </h4>
+    <img
+      alt="Organos Auxiliares - Andeiv - OIENIV"
+      src="/static/images/test-logo.png"
+    />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+  <div
+    className="helper-body"
+  >
+    <h4>
+      Copaso
+    </h4>
+    <img
+      alt="Organos Auxiliares - Copaso - OIENIV"
+      src="/static/images/test-logo.png"
+    />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+  <div
+    className="helper-body"
+  >
+    <h4>
+      Pronani
+    </h4>
+    <img
+      alt="Organos Auxiliares - Pronani - OIENIV"
+      src="/static/images/test-logo.png"
+    />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+  <div
+    className="helper-body"
+  >
+    <h4>
+      Vemiv
+    </h4>
+    <img
+      alt="Organos Auxiliares - Vemiv - OIENIV"
+      src="/static/images/test-logo.png"
+    />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+  <div
+    className="helper-body"
+  >
+    <h4>
+      Academia de OIENIV
+    </h4>
+    <img
+      alt="Organos Auxiliares - Academia de OIENIV - OIENIV"
+      src="/static/images/test-logo.png"
+    />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+  <div
+    className="helper-body"
+  >
+    <h4>
+      La Voz de OIENIV
+    </h4>
+    <img
+      alt="Organos Auxiliares - La Voz de OIENIV - OIENIV"
+      src="/static/images/test-logo.png"
+    />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+`;

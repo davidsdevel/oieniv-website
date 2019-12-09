@@ -1,0 +1,8 @@
+# Next build dir
+/.next
+/out
+
+# static folder
+/public
+
+/node_modules

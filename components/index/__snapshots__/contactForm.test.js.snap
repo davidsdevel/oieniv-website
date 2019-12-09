@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm with Snapshot Render ContactForm without crash 1`] = `
+<div
+  className="jsx-4011998575"
+  id="contact-image"
+>
+  <div
+    className="jsx-4011998575"
+    id="contact-container"
+  >
+    <h3
+      className="jsx-4011998575 sub-titles"
+    >
+      Contactanos
+    </h3>
+    <input
+      className="jsx-4011998575"
+      name="name"
+      onChange={[Function]}
+      placeholder="Nombre"
+      type="text"
+      value=""
+    />
+    <input
+      className="jsx-4011998575"
+      name="email"
+      onChange={[Function]}
+      placeholder="Correo"
+      type="email"
+      value=""
+    />
+    <input
+      className="jsx-4011998575"
+      name="phoneNumber"
+      onChange={[Function]}
+      placeholder="Numero de Telefono"
+      type="phone"
+    />
+    <div
+      className="jsx-4011998575"
+      style={
+        Object {
+          "margin": "auto",
+          "position": "relative",
+          "width": "calc(30% + 60px)",
+        }
+      }
+    >
+      <textarea
+        className="jsx-4011998575"
+        name="comment"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Comentario"
+        value=""
+      />
+      <span
+        className="jsx-4011998575"
+        id="letters-count"
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      >
+        0
+        /250
+      </span>
+    </div>
+    <button
+      className="jsx-4011998575"
+      onClick={[Function]}
+    >
+      Enviar
+    </button>
+  </div>
+</div>
+`;
