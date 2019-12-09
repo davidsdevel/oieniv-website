@@ -5,7 +5,7 @@ import Link from "next/link";
 const HelperBody = ({logoURL, name, content, url}) => (
 	<div className="helper-body">
 		<h4>{name}</h4>
-		<Link href="/helper" as={url}>
+		<Link href="/[helper]" as={url}>
 			<a>
 				<img src={logoURL} alt={`Organos Auxiliares - ${name} - OIENIV`}/>
 			</a>
