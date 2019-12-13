@@ -1,7 +1,7 @@
 import React from "react";
-import {object} from "prop-types";
+import {object, number} from "prop-types";
 
-const Event = ({data}) => {
+const Event = ({data, active}) => {
 	const date = new Date(data.date + " " + data.time);
 	const time = date.getHours();
 	var minutes = date.getMinutes();
@@ -62,15 +62,22 @@ const Event = ({data}) => {
 		default: break;
 	}
 
-
-
-	return <div style={{backgroundImage: data.image ? `url(${data.image})` : ""}} className="template">
+	return <div style={{backgroundImage: data.image ? `url(${data.image})` : ""}} className={"template " + (active === data.ID ? "active" : "deactivate")}>
 		<div id="template-shadow">
 			<h3>{data.name}</h3>
 			<p>{data.description}</p>
-			<span id="date">El {date.getDate()} de {month} a las {hour}</span>
-			<span id="church">En la Iglesia <b>{data.church}</b></span>
-			<span id="location">Zona <b>{data.location}</b></span>
+			{
+				(data.date || data.time) &&
+				<span id="date">El {date.getDate()} de {month} a las {hour}</span>
+			}
+			{
+				data.church &&
+				<span id="church">En la Iglesia <b>{data.church}</b></span>
+			}
+			{
+				data.location &&
+				<span id="location">Zona <b>{data.location}</b></span>
+			}
 		</div>
 		<style jsx>{`
 			.template {
@@ -84,14 +91,22 @@ const Event = ({data}) => {
 			}
 			.template h3 {
 				text-align: center;
-				margin-top: 80px;
+				margin-top: ${ !data.church && !data.location && (!data.time  || !data.date) ? "120px" : "80px"};
+				font-size: 28px;
+			}
+			.template p {
+				text-align: center;
+				position: absolute;
+				left: 5%;
+				width: 90%;
+				top: ${ !data.church && !data.location && (!data.time  || !data.date) ? "60%" : "35%"};
 			}
 			.template span {
 				display: block;
 				position: absolute;
 			}
 			#template-shadow {
-				background: rgba(0,0,0,.5);
+				background: rgba(0,0,0,.6);
 				position: absolute;
 				width: 100%;
 				height: 100%;
@@ -110,12 +125,33 @@ const Event = ({data}) => {
 				left: 0;
 				bottom: 5%;
 			}
+			.active {
+				opacity: 1;
+				transition: linear 2s;
+			}
+			.deactivate {
+				opacity: 0;
+				transition: linear 2s;
+			}
+			@media screen and (min-width: 780px) {
+				.template p {
+					width: 60%;
+					left: 20%;
+				}
+				#date {
+					right: 15%;
+				}
+				#location {
+					left: 15%;
+				}
+			}
 		`}</style>
 	</div>
 }
 
 Event.propTypes = {
-	data: object
+	data: object,
+	index: number
 };
 
 export default Event;

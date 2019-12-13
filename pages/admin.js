@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Head from "next/head";
 import Login from "../components/admin/login";
 import Dashboard from "../components/admin/dashboard";
 import fetch from "isomorphic-fetch";
@@ -16,7 +17,7 @@ class Admin extends Component {
 	}
 	static async getInitialProps({req}) {
 		try {
-			let origin;
+			/*let origin;
 
 			if (req)
 				origin = req.headers["host"];
@@ -28,10 +29,10 @@ class Admin extends Component {
 					authorization: process.env.AUTH_TOKEN
 				}
 			});
-			const data = await res.json();
+			const data = await res.json();*/
 
 			return {
-				...data,
+				logged: false,
 				hideLayout: true
 			};
 
@@ -49,13 +50,16 @@ class Admin extends Component {
 
 		let UI;
 
-		if (true)
+		if (logged)
 			UI = <Dashboard/>;
 		else
 			UI = <Login onLogin={this.onLogin}/>;
 
 
 		return <div>
+			<Head>
+				<title>Pagina de Administracion - OIENIV</title>
+			</Head>
 			{UI}
 		</div>;
 	}

@@ -34,8 +34,19 @@ Home.getInitialProps = async ({req, res}) => {
 		origin = location.host;
 
 	const dataRes = await fetch(`${origin.match(/localhost|127\.0\.0\.1|::1/) !== null ? "http:" : "https:"}//${origin}/data/index`);
-	const data = await dataRes.json();
+	var data = await dataRes.json();
 
+	if (data.length === 0)
+		data = [{
+			"ID": 1,
+			"name": "OIENIV",
+			"description": "Organización de Iglesias Evangelicas Nacionales Independientes de Venezuela.\r\nColumna y Baluarte de la Verdad",
+			"date": "",
+			"time": "",
+			"location": "",
+			"image": "/images/OIENIV-columna-y-baluarte-de-la-verdad.jpg",
+			"church": ""
+		}];
 	return {
 		data
 	};

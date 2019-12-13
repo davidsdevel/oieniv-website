@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import store from "../../store/reducer";
+import {showAlert} from "../../store/actionCreators";
 
 export default class extends Component {
 	constructor() {
@@ -7,7 +9,6 @@ export default class extends Component {
 		this.state = {
 			username: "",
 			password: "",
-			saveSession: false,
 			isFetching: false
 		};
 
@@ -15,21 +16,21 @@ export default class extends Component {
 		this.login = this.login.bind(this);
 	}
 	handleInput({target}) {
-		const {name, type} = target;
-
-		const value = type === "checkbox" ? target.checked : target.value;
+		const {name, type, value} = target;
 
 		this.setState({
 			[name]: value
 		});
 	}
-	async login() {
+	async login(e) {
 		try {
+			e.preventDefault();
+
 			this.setState({
 				isFetching: true
 			});
 
-			const {username, password, saveSession} = this.state;
+			const {username, password} = this.state;
 
 			const res = await fetch("/api/admin/login", {
 				method: "POST",
@@ -39,17 +40,22 @@ export default class extends Component {
 				},
 				body: JSON.stringify({
 					username,
-					password,
-					saveSession
+					password
 				})
 			});
 
-			const data = await res.json();
 
-			if (data.success)
-				this.props.onLogin();
-			else
-				this.loginError(data.message);
+			if (res.status >= 500) {
+				store.dispatch(showAlert("Error en el servidor, intente mas tarde"));
+
+			} else {
+				let data = await res.json();
+
+				if (data.success)
+					this.props.onLogin();
+				else
+					store.dispatch(showAlert("Usuario o contraseña incorrectos"));
+			}
 
 			this.setState({
 				isFetching: false
@@ -58,18 +64,49 @@ export default class extends Component {
 			throw new Error(err);
 		}
 	}
-	loginError(msg) {
-		console.error(msg);
-	}
 	render() {
-		return <div>
-			<div>
-				<input type="text" placeholder="Nombre de Usuario" name="username" value={this.state.username} onChange={this.handleInput}/>
-				<input type="password" placeholder="Contraseña" name="password" value={this.state.password} onChange={this.handleInput}/>
-				<label htmlFor="saveSession">Recordar</label>
-				<input type="checkbox" name="saveSession" value={this.state.saveSession} onChange={this.handleInput}/>
-				<button onClick={this.login}>Enviar</button>
+		return <div id="main">
+			<div id="container">
+				<form onSubmit={this.login}>
+					<input type="text" placeholder="Nombre de Usuario" name="username" value={this.state.username} onChange={this.handleInput}/>
+					<input type="password" placeholder="Contraseña" name="password" value={this.state.password} onChange={this.handleInput}/>
+					<button onClick={this.login}>Enviar</button>
+				</form>
 			</div>
+			<style jsx>{`
+				#main {
+					display: flex;
+					background: #f7f7f7;
+					position: absolute;
+					height: 100%;
+					width: 100%;
+				}
+				#container {
+					margin: auto;
+					width: fit-content;
+				}
+				#container input, #container button {
+				    padding: 10px 20px;
+				    border: none;
+				    display: block;
+				    margin: 15px auto;
+				    box-shadow: grey 1px 1px 2px;
+				    border-radius: 10px;
+				}
+				#container input {
+					background: white;
+				}
+				#container input:focus {
+					outline: none;
+				}
+				#container button {
+					background: black;
+				    color: white;
+				    cursor: pointer;
+				    margin: 30px auto;
+				    width: 150px;
+				}
+			`}</style>
 		</div>;
 	}
 }
