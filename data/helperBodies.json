@@ -3,6 +3,7 @@
 		"title": "Anjeiv",
 		"extendedTitle": "Asociación Nacional de Jovenes Evangelicos Independientes de Venezuela",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"logo":"/images/anjeiv-landing-logo.png",
 		"background": "/images/Anjeiv-landing-background.jpg",
 		"president": {
@@ -13,6 +14,7 @@
 		"title": "La Voz de OIENIV",
 		"extendedTitle": "La Radio donde la Protagonista es La Palabra de Dios",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"logo":"/images/lavozdeoieniv-landing-logo.png",
 		"background": "/images/LaVozdeOIENIV-landing-background.jpg",
 		"president": {

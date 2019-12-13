@@ -5,6 +5,7 @@ import LandingPage from "../components/helper/landingPage";
 import President from "../components/helper/president";
 import Description from "../components/helper/description";
 import Photos from "../components/helper/photos";
+import Message from "../components/helper/helperMessage";
 import fetch from "isomorphic-fetch";
 import NextError from "./_error";
 
@@ -42,7 +43,7 @@ class Helper extends Component {
 		}
 	}
 	render() {
-		const {error, status, url, title, extendedTitle, description, logo, background} = this.props;
+		const {error, status, url, title, extendedTitle, description, logo, background, message} = this.props;
 
 		if (error)
 			return <NextError statusCode={status} url={url}/>;
@@ -58,8 +59,9 @@ class Helper extends Component {
 					logoURL={logo}
 				/>
 				<President/>
-				<Description/>
+				<Description title={title}/>
 				<Photos/>
+				<Message message={message} logo={logo}/>
 				<style jsx global>{`
 					p.description {
 						padding: 0 5%;

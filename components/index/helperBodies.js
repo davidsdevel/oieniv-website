@@ -42,7 +42,7 @@ const data = [
 		name: "La Voz de OIENIV",
 		url: "/lavozdeoieniv",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/images/lavozdeoieniv-logo.png"
+		logoURL: "/images/lavozdeoieniv-logo-black.png"
 	},
 	{
 		name: "Primeros Auxilios",

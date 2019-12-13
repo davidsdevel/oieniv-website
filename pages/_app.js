@@ -1,14 +1,16 @@
 import React from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
+import Alert from "../components/alert";
 import {object, func} from "prop-types";
 
-const Layout = ({ Component, pageProps }) => (
-	<div>
+const Layout = ({ Component, pageProps }) => {
+	return <div>
 		{
 			!pageProps.hideLayout &&
 			<Nav error={pageProps.error} />
 		}
+		<Alert/>
 		<Component {...pageProps} />
 		{
 			!pageProps.hideLayout &&
@@ -33,7 +35,7 @@ const Layout = ({ Component, pageProps }) => (
 			}
 		`}</style>
 	</div>
-);
+};
 
 Layout.propTypes = {
 	Component: func,

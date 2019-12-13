@@ -39,7 +39,7 @@ class Nav extends Component {
 			this.setState({
 				scrollTop:document.documentElement.scrollTop
 			});
-			if (this.state.scrollTop < 700)
+			if (this.state.scrollTop < 500)
 				this.setState({viewFixedMenu: false});
 			else
 				this.setState({viewStaticMenu: false});
@@ -160,15 +160,15 @@ class Nav extends Component {
 					background: rgba(0, 0, 0, .6)
 				}
 				.mobile-menu-bar {
-					height: 50px;
+					height: 40px;
 				}
 				.mobile-menu-bar img {
-					height: 100%;
+					height: 80%;
 					position: absolute;
 					left: 5%;
-					top: 0;
+					top: 10%;
 				}
-				#mobile-static{
+				#mobile-static {
 					position: relative;
 					z-index: 1;
 				}
@@ -185,6 +185,7 @@ class Nav extends Component {
 					height: 100%;
 					top:0;
 					width: 80%;
+					max-width: 350px;
 					background: white;
 					transition: .5s ease;
 						z-index: 2;
@@ -233,10 +234,11 @@ class Nav extends Component {
 					position: absolute;
 					top: 0;
 					width: 100%;
+					z-index: 2;
 				}
 				ul.menu {
 					width: 50%;
-					display: flex;
+					display: none;
 					padding: 20px 5%;
 					justify-content: space-between;
 					width: 90%;
@@ -291,6 +293,17 @@ class Nav extends Component {
 					#mobile-static li img {
 						width: 50px;
 						height: 50px;
+					}
+				}
+				@media screen and (min-width: 760px) {
+					ul.menu {
+						display: flex;
+					}
+					.mobile-menu-bar {
+						display: none;
+					}
+					.mobile-menu-bar img {
+						display: none;
 					}
 				}
 				.shadowShow{

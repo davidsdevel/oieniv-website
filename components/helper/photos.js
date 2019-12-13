@@ -39,6 +39,7 @@ const Photos = () => (
 				margin: auto;
     			width: 95.05%;
     			display: block;
+    			max-width: 600px;
 			}
 		`}</style>
 	</div>
