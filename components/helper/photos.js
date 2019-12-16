@@ -28,6 +28,12 @@ const MapPhotos = () => PhotosURL.map((e) => (<div key={e} className="helper-pho
     		min-width: 160px;
     		margin: auto;
     		height: 170px;
+    		max-width: 320px;
+		}
+		@media screen and (min-width: 760px) {
+			.helper-photo-container {
+				width: 25%;
+			}
 		}
 	`}</style>
 </div>));
@@ -39,7 +45,7 @@ const Photos = () => (
 				margin: auto;
     			width: 95.05%;
     			display: block;
-    			max-width: 600px;
+    			max-width: 1280px;
 			}
 		`}</style>
 	</div>

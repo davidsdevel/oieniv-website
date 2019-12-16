@@ -2,12 +2,10 @@ const express = require("express");
 const next = require("next");
 const fileUpload = require("express-fileupload");
 
-const {writeFile, readFile, exists} = require("fs");
-
 const server = express();
 
 const PORT = parseInt(process.env.PORT, 10) || 3000;
-const AUTH_SECRET = "013N1V.s3cr3t"; //TODO: Change to env var
+const AUTH_SECRET = "013N1V.s3cr3t"; //TODO: Cambiar a variable de entorno
 
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
@@ -20,7 +18,7 @@ const Api = require("./lib/server/API");
 
 const DB = new database({ dev });
 const API = new Api({
-	db: DB,
+	db: DB
 });
 
 server
@@ -66,20 +64,21 @@ async function Prepare() {
 				const {action} = params;
 				const {ID} = body;
 
-				switch(action) {
-				case "delete-event":
-					try {
+				try {
+					switch(action) {
+					case "delete-event":
 						await DB.deleteEvent(ID);
+
 						res.json({
 							status: "ok"
 						});
-					} catch(err) {
-						console.error(err);
-						res.status(500).send(err);
+						break;
+					default:
+						res.sendStatus(404);
 					}
-					break;
-				default:
-					res.sendStatus(404);
+				} catch(err) {
+					console.error(err);
+					res.status(500).send(err);
 				}
 			})
 			.post("/api/admin/:action", async (req, res) => {
@@ -88,9 +87,7 @@ async function Prepare() {
 
 					switch(action) {
 					case "login":
-						let {username, password, saveSession} = req.body;
-
-						if (username == "oieniv" && password == 1234) {
+						if (req.body.username == "oieniv" && req.body.password == 1234) {
 							res.json({
 								success: true
 							});
@@ -102,10 +99,9 @@ async function Prepare() {
 						}
 						break;
 					case "create-event":
-						await API.CreateEvent(req);
-						res.json({
-							status: "OK"
-						});
+
+						res.json(await API.CreateEvent(req));
+
 						break;
 					default:
 						res.sendStatus(404);

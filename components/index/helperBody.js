@@ -7,10 +7,32 @@ const HelperBody = ({logoURL, name, content, url}) => (
 		<h4>{name}</h4>
 		<Link href="/[helper]" as={url}>
 			<a>
-				<img src={logoURL} alt={`Organos Auxiliares - ${name} - OIENIV`}/>
+				{
+					!logoURL ?
+						<span>
+							<b>{name}</b>
+						</span>
+						:
+						<img src={logoURL} alt={`Organos Auxiliares - ${name} - OIENIV`}/>
+				}
 			</a>
 		</Link>
 		<p>{content}</p>
+		<style jsx>{`
+			a {
+				height: 101px;
+				display: flex;
+				position: relative;
+				flex-direction: column;
+				justify-content: center;
+				text-decoration: none;
+				color: black;
+				margin: 10px 0;
+			}
+			a span {
+    			text-align: center;
+			}
+		`}</style>
 	</div>
 );
 

@@ -51,7 +51,7 @@ class ManageEvents extends Component {
 				imageName,
 				imageType
 			});
-		}
+		};
 	}
 	handleInput({target}) {
 		this.setState({
@@ -69,20 +69,20 @@ class ManageEvents extends Component {
 	}
 	async createEvent() {
 		try {
-			const {ID, name, church, image, description, date, time, location, preview, imageType, imageName, imageBlob} = this.state;
+			const {ID, name, church, image, description, date, time, location, imageType, imageName, imageBlob} = this.state;
 			
 			const formData = new FormData();
 
 			formData.append("ID", ID || undefined);
-			formData.append('name', name);
-			formData.append('description', description);
-			formData.append('date', date);
-			formData.append('time', time);
-			formData.append('location', location === "none" ? null : location);
-			formData.append('church', church);
-			formData.append('imageName', imageName);
-			formData.append('imageType', imageType);
-			formData.append('file', imageBlob);
+			formData.append("name", name);
+			formData.append("description", description);
+			formData.append("date", date);
+			formData.append("time", time);
+			formData.append("location", location === "none" ? null : location);
+			formData.append("church", church);
+			formData.append("imageName", imageName);
+			formData.append("imageType", imageType);
+			formData.append("file", imageBlob);
 
 			if (ID && /^\/uploads\/\d*\//.test(image))
 				formData.append("image", image);
@@ -99,15 +99,17 @@ class ManageEvents extends Component {
 				const data = await res.json();
 
 				if (data.status === "OK") {
-					store.dispatch(showAlert("Creado el evento exitosamente"));
+					store.dispatch(showAlert(data.message));
 					store.dispatch(closeEdit());
 					localStorage.removeItem("temp");
-				}
+
+				} else if (data.status === "Error")
+					store.dispatch(showAlert(data.message));
 			}
 
 		} catch(err) {
 			console.error(err);
-			store.dispatch(showAlert("Error al crear el Evento"))
+			store.dispatch(showAlert("Error al crear el Evento"));
 		}
 	}
 	preview() {
@@ -225,7 +227,7 @@ class ManageEvents extends Component {
 					left: 5%;
 				}
 			`}</style>
-		</div>
+		</div>;
 	}
 }
 

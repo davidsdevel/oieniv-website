@@ -1,9 +1,9 @@
 import React from "react";
-import {string} from "prop-types";
+import {object} from "prop-types";
 
-const HelperMessage = ({message, logo}) => (<div id="message-main">
-	<img src={logo}/>
-	<p>{message}</p>
+const HelperMessage = ({data}) => (<div id="message-main">
+	<img src={data.image}/>
+	<p>{data.text}</p>
 	<style>{`
 		#message-main {
 			background: #3c374e;
@@ -36,8 +36,7 @@ const HelperMessage = ({message, logo}) => (<div id="message-main">
 </div>);
 
 HelperMessage.propTypes = {
-	message: string,
-	logo: string
-}
+	data: object
+};
 
 export default HelperMessage;

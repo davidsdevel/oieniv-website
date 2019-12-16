@@ -2,8 +2,8 @@ import React, {Component} from "react";
 import Head from "next/head";
 import Login from "../components/admin/login";
 import Dashboard from "../components/admin/dashboard";
-import fetch from "isomorphic-fetch";
 import {boolean} from "prop-types";
+import store from "../store/reducer";
 
 class Admin extends Component {
 	constructor(props) {
@@ -13,36 +13,35 @@ class Admin extends Component {
 			...props
 		};
 
-		this.onLogin = this.onLogin.bind(this);
+		this.handleLogin = this.handleLogin.bind(this);
+
+		store.subscribe(this.handleLogin);
 	}
-	static async getInitialProps({req}) {
-		try {
-			/*let origin;
+	static async getInitialProps() {
+		/*let origin;
 
-			if (req)
-				origin = req.headers["host"];
-			else
-				origin = location.host;
+		if (req)
+			origin = req.headers["host"];
+		else
+			origin = location.host;
 
-			const res = await fetch(`${origin.match(/localhost|127\.0\.0\.1|::1/) !== null ? "http:" : "https:"}//${origin}/api/admin/session`, {
-				headers: {
-					authorization: process.env.AUTH_TOKEN
-				}
-			});
-			const data = await res.json();*/
+		const res = await fetch(`${origin.match(/localhost|127\.0\.0\.1|::1/) !== null ? "http:" : "https:"}//${origin}/api/admin/session`, {
+			headers: {
+				authorization: process.env.AUTH_TOKEN
+			}
+		});
+		const data = await res.json();*/
 
-			return {
-				logged: false,
-				hideLayout: true
-			};
-
-		} catch(err) {
-			console.error(err);
-		}
+		return {
+			logged: false,
+			hideLayout: true
+		};
 	}
-	onLogin() {
+	handleLogin() {
+		const {logged} = store.getState().adminLogin;
+
 		this.setState({
-			logged: true
+			logged
 		});
 	}
 	render() {
@@ -53,7 +52,7 @@ class Admin extends Component {
 		if (logged)
 			UI = <Dashboard/>;
 		else
-			UI = <Login onLogin={this.onLogin}/>;
+			UI = <Login/>;
 
 
 		return <div>

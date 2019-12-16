@@ -74,7 +74,7 @@ const Footer = () => (
 			</ul>
 		</div>
 		<ul id="footer-copyright">
-			<li>Desarrollado por <a href="https://www.facebook.com/davidsdevel" rel="noreferrer" target="_blank">David&apos;s Devel</a></li>
+			<li>Desarrollado por <a href="https://www.facebook.com/davidsdevel" rel="noopener noreferrer" target="_blank">David&apos;s Devel</a></li>
 			<li>
 				<Link href="/terminos">
 					<a>Terminos de Servicio</a>

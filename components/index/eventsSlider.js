@@ -76,7 +76,7 @@ class Slider extends Component {
 	}
 	componentWillUnmount() {
 		clearInterval(this.interval);
-		clearTimeout(this.timeout);s
+		clearTimeout(this.timeout);
 	}
 	render() {
 		const {data, active} = this.state;
@@ -131,6 +131,6 @@ class Slider extends Component {
 
 Slider.propTypes = {
 	data: array
-}
+};
 
 export default Slider;

@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import store from "../store/reducer";
 import {hideAlert} from "../store/actionCreators";
 
-export default class extends Component {
+export default class Alert extends Component {
 	constructor() {
 		super();
 
@@ -49,7 +49,7 @@ export default class extends Component {
 		}, 5000);
 	}
 	render() {
-		const {message,show} = this.state;
+		const {message, show} = this.state;
 
 		return <div id="alert-main">
 			<div id="alert-container">
@@ -74,6 +74,6 @@ export default class extends Component {
     				box-shadow: 0px 0px 8px gray;
 				}
 			`}</style>
-		</div>
+		</div>;
 	}
 }

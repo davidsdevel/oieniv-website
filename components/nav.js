@@ -119,7 +119,7 @@ class Nav extends Component {
 			<div id="shadow" className={this.state.viewNav ? "shadowShow" : "shadowHide" } onClick={this.toggleMenu}></div>
 
 			<ul style={{left: this.state.viewNav ? 0 : "-100%"}} id="mobile-menu">
-				<li id="header-nav" style={{background: `#f7f7f7`, backgroundSize:"550px", backgroundPosition: "center"}}>
+				<li id="header-nav" style={{background: "#f7f7f7", backgroundSize:"550px", backgroundPosition: "center"}}>
 					<div>
 						<h1>OIENIV</h1>
 						<h2>Columna y Baluarte de la Verdad</h2>
@@ -127,8 +127,8 @@ class Nav extends Component {
 				</li>
 				<li>
 					<div 
-					className="img-circle" 
-					id="img-menu"/>
+						className="img-circle" 
+						id="img-menu"/>
 				</li>
 				<li>
 					<Link href="/">

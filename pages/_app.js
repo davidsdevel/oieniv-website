@@ -34,7 +34,7 @@ const Layout = ({ Component, pageProps }) => {
 				margin: 10px 0 50px;
 			}
 		`}</style>
-	</div>
+	</div>;
 };
 
 Layout.propTypes = {

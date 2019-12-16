@@ -6,49 +6,49 @@ const data = [
 		name: "Anjeiv",
 		url: "/anjeiv",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/images/anjeiv-logo.jpg"
+		logoURL: "/images/anjeiv-logo.png"
 	},
 	{
 		name: "Andeiv",
 		url: "/andeiv",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/images/test-logo.png"
+		logoURL: ""
 	},
 	{
 		name: "Copaso",
 		url: "/copaso",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/images/test-logo.png"
+		logoURL: ""
 	},
 	{
 		name: "Pronani",
 		url: "/pronani",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/images/test-logo.png"
+		logoURL: ""
 	},
 	{
 		name: "Vemiv",
 		url: "/vemiv",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/images/vemiv-logo.jpg"
+		logoURL: "/images/vemiv-logo.png"
 	},
 	{
 		name: "AEVO",
 		url: "/aevo",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/images/test-logo.png"
+		logoURL: ""
 	},
 	{
 		name: "La Voz de OIENIV",
 		url: "/lavozdeoieniv",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/images/lavozdeoieniv-logo-black.png"
+		logoURL: "/images/lavozdeoieniv-logo.png"
 	},
 	{
 		name: "Primeros Auxilios",
 		url: "/primerosauxilios",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/images/test-logo.png"
+		logoURL: ""
 	}
 ];
 
@@ -67,6 +67,8 @@ const HelperBodies = () => (
 		<style jsx global>{`
 			#helper-bodies-container {
 				width: 80%;
+				max-width: 1000px;
+				margin: auto;
 				padding: 50px 10%;
 				background: #f7f7f7;
 			}
@@ -76,16 +78,17 @@ const HelperBodies = () => (
 				color: gray;
 			}
 			#helper-bodies-container .helper-body {
-				width: 20%;
+				width: 45%;
 				display: inline-block;
 				margin: 50px 2.5%;
 			}
 			#helper-bodies-container .helper-body img {
+				height: auto;
 				width: 100%;
 			}
-			@media screen and (max-width: 480px) {
+			@media screen and (min-width: 760px) {
 				#helper-bodies-container .helper-body {
-					width: 45%;
+					width: 20%;
 				}	
 			}
 		`}</style>

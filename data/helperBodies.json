@@ -1,24 +1,46 @@
 {
 	"anjeiv": {
 		"title": "Anjeiv",
-		"extendedTitle": "Asociación Nacional de Jovenes Evangelicos Independientes de Venezuela",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"logo":"/images/anjeiv-landing-logo.png",
-		"background": "/images/Anjeiv-landing-background.jpg",
+		"landing": {
+			"background": "/images/anjeiv-landing-background.jpg",
+			"extendedTitle": "Asociación Nacional de Jovenes Evangelicos Independientes de Venezuela",
+			"logo":"/images/anjeiv-landing-logo.png",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+		},
+		"description": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"image":"/images/anjeiv-logo-black.png"
+		},
+		"message": {
+			"text": "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\"",
+			"image": "/images/anjeiv-logo.png"
+		},
 		"president": {
-			"name": "Adrián Cedeño"
+			"name": "Adrián Cedeño",
+			"image": "/images/president.jpg",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 		}
 	},
 	"lavozdeoieniv": {
 		"title": "La Voz de OIENIV",
-		"extendedTitle": "La Radio donde la Protagonista es La Palabra de Dios",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"logo":"/images/lavozdeoieniv-landing-logo.png",
-		"background": "/images/LaVozdeOIENIV-landing-background.jpg",
+		"landing": {
+			"background": "/images/lavozdeoieniv-landing-background.jpg",
+			"extendedTitle": "",
+			"logo":"/images/lavozdeoieniv-landing-logo.png",
+			"description": "La Radio donde la Protagonista es La Palabra de Dios"
+		},
+		"description": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"image": "/images/lavozdeoieniv-logo-black.png"
+		},
+		"message": {
+			"text": "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\"",
+			"image": "/images/lavozdeoieniv-landing-logo.png"
+		},
 		"president": {
-			"name": "Agustín Sanchez"
+			"name": "Agustín Sanchez",
+			"image": "/images/president.jpg",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 		}
 	}
 }

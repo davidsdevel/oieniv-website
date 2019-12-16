@@ -1,5 +1,5 @@
 import React from "react";
-import {string} from "prop-types";
+import {string, object} from "prop-types";
 
 function GenerateExtendedTitleWithCamelCase({extendedTitle}) {
 	const splittedInLetters = extendedTitle.split("");
@@ -11,15 +11,18 @@ function GenerateExtendedTitleWithCamelCase({extendedTitle}) {
 	});
 }
 
-const LandingPage = ({title, extendedTitle, description, logoURL, backgroundURL}) => (
+const LandingPage = ({title, data}) => (
 	<div id="main">
-		<img id="logo" src={logoURL} alt={`${title} Logo`}/>
+		<img id="logo" src={data.logo} alt={`${title} Logo`}/>
 		<div id="layer"></div>
 		<h1>{title}</h1>
-		<p style={{marginBottom: "25px"}}>
-			<GenerateExtendedTitleWithCamelCase extendedTitle={extendedTitle}/>
-		</p>
-		<p>{description}</p>
+		{
+			data.extendedTitle &&
+			<p style={{marginBottom: "25px"}}>
+				<GenerateExtendedTitleWithCamelCase extendedTitle={data.extendedTitle}/>
+			</p>
+		}
+		<p>{data.description}</p>
 		<style jsx>{`
 			h1 {
 				font-size: 70px;
@@ -29,7 +32,7 @@ const LandingPage = ({title, extendedTitle, description, logoURL, backgroundURL}
 				color: white;
 				padding: 50px 5% 100px;
 				text-align: center;
-				background-image: url(${backgroundURL});
+				background-image: url(${data.background});
     			background-position: center;
     			background-size: cover;
     			position: relative;
@@ -55,10 +58,7 @@ const LandingPage = ({title, extendedTitle, description, logoURL, backgroundURL}
 
 LandingPage.propTypes = {
 	title: string,
-	extendedTitle: string,
-	description: string,
-	logoURL: string,
-	backgroundURL: string
+	data: object
 };
 
 export default LandingPage;

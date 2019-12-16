@@ -25,8 +25,8 @@ const Home = (props) => (
 	</div>
 );
 
-Home.getInitialProps = async ({req, res}) => {
-	let origin;
+Home.getInitialProps = async ({req}) => {
+	var origin;
 
 	if (req)
 		origin = req.headers["host"];
@@ -50,6 +50,10 @@ Home.getInitialProps = async ({req, res}) => {
 	return {
 		data
 	};
-}
+};
+
+Home.propTypes = {
+	data: object
+};
 
 export default Home;

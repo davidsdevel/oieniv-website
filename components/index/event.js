@@ -2,12 +2,12 @@ import React from "react";
 import {object, number} from "prop-types";
 
 const Event = ({data, active}) => {
-	const date = new Date(data.date + " " + data.time);
+	const date = new Date(`${data.date  } ${  data.time}`);
 	const time = date.getHours();
 	var minutes = date.getMinutes();
 
 	if (minutes < 10)
-		minutes = "0" + minutes;
+		minutes = `0${  minutes}`;
 	else if (minutes === 0)
 		minutes = "";
 
@@ -23,46 +23,46 @@ const Event = ({data, active}) => {
 
 	let month;
 	switch(date.getMonth()) {
-		case 0:
-			month = "Enero";
-			break;
-		case 1:
-			month = "Febrero";
-			break;
-		case 2:
-			month = "Marzo";
-			break;
-		case 3:
-			month = "Abril";
-			break;
-		case 4:
-			month = "Mayo";
-			break;
-		case 5:
-			month = "Junio";
-			break;
-		case 6:
-			month = "Julio";
-			break;
-		case 7:
-			month = "Agosto";
-			break;
-		case 8:
-			month = "Septiembre";
-			break;
-		case 9:
-			month = "Octubre";
-			break;
-		case 10:
-			month = "Noviembre";
-			break;
-		case 11:
-			month = "Diciembre";
-			break;
-		default: break;
+	case 0:
+		month = "Enero";
+		break;
+	case 1:
+		month = "Febrero";
+		break;
+	case 2:
+		month = "Marzo";
+		break;
+	case 3:
+		month = "Abril";
+		break;
+	case 4:
+		month = "Mayo";
+		break;
+	case 5:
+		month = "Junio";
+		break;
+	case 6:
+		month = "Julio";
+		break;
+	case 7:
+		month = "Agosto";
+		break;
+	case 8:
+		month = "Septiembre";
+		break;
+	case 9:
+		month = "Octubre";
+		break;
+	case 10:
+		month = "Noviembre";
+		break;
+	case 11:
+		month = "Diciembre";
+		break;
+	default: break;
 	}
 
-	return <div style={{backgroundImage: data.image ? `url(${data.image})` : ""}} className={"template " + (active === data.ID ? "active" : "deactivate")}>
+	return <div style={{backgroundImage: data.image ? `url(${data.image})` : ""}} className={`template ${  active === data.ID ? "active" : "deactivate"}`}>
 		<div id="template-shadow">
 			<h3>{data.name}</h3>
 			<p>{data.description}</p>
@@ -146,12 +146,12 @@ const Event = ({data, active}) => {
 				}
 			}
 		`}</style>
-	</div>
-}
+	</div>;
+};
 
 Event.propTypes = {
 	data: object,
-	index: number
+	active: number
 };
 
 export default Event;

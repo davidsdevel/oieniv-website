@@ -48,6 +48,7 @@ class Dashboard extends Component {
 				#dashboard #dashboard-main {
 					width: 80%;
 					position: absolute;
+					height: 100%;
 					right: 0;
 				}
 			`}</style>

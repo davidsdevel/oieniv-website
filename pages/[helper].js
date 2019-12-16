@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Head from "../components/head";
-import {number, boolean, string} from "prop-types";
+import {number, boolean, string, object} from "prop-types";
 import LandingPage from "../components/helper/landingPage";
 import President from "../components/helper/president";
 import Description from "../components/helper/description";
@@ -43,7 +43,7 @@ class Helper extends Component {
 		}
 	}
 	render() {
-		const {error, status, url, title, extendedTitle, description, logo, background, message} = this.props;
+		const {error, status, url, title, landing, description, message, president} = this.props;
 
 		if (error)
 			return <NextError statusCode={status} url={url}/>;
@@ -51,38 +51,25 @@ class Helper extends Component {
 		return (
 			<div>
 				<Head title={title} />
-				<LandingPage
-					title={title}
-					extendedTitle={extendedTitle}
-					description={description}
-					backgroundURL={background}
-					logoURL={logo}
-				/>
-				<President/>
-				<Description title={title}/>
+				<LandingPage title={title} data={landing}/>
+				<President title={title} data={president}/>
+				<Description title={title} data={description}/>
 				<Photos/>
-				<Message message={message} logo={logo}/>
-				<style jsx global>{`
-					p.description {
-						padding: 0 5%;
-						margin: 0 0 50px 0;
-						text-align: center;
-					}
-				`}</style>
+				<Message data={message}/>
 			</div>
 		);
 	}
 }
 
 Helper.propTypes = {
-	title: string,
-	description: string,
-	logo: string,
-	extendedTitle: string,
-	background: string,
-	url: string,
 	status: number,
-	error: boolean
+	error: boolean,
+	url: string,
+	title: string,
+	landing: object,
+	description: object,
+	message: object,
+	president: object
 };
 
 export default Helper;

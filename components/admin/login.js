@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import store from "../../store/reducer";
-import {showAlert} from "../../store/actionCreators";
+import {showAlert, login} from "../../store/actionCreators";
 
-export default class extends Component {
+export default class Login extends Component {
 	constructor() {
 		super();
 
@@ -16,7 +16,7 @@ export default class extends Component {
 		this.login = this.login.bind(this);
 	}
 	handleInput({target}) {
-		const {name, type, value} = target;
+		const {name, value} = target;
 
 		this.setState({
 			[name]: value
@@ -52,7 +52,7 @@ export default class extends Component {
 				let data = await res.json();
 
 				if (data.success)
-					this.props.onLogin();
+					store.dispatch(login());
 				else
 					store.dispatch(showAlert("Usuario o contraseña incorrectos"));
 			}

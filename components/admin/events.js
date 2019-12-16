@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import ManageEvents from "./manageEvents";
 import store from "../../store/reducer";
-import {newEvent, editEvent, closeEdit} from "../../store/actionCreators";
+import {newEvent, editEvent, closeEdit, showAlert} from "../../store/actionCreators";
 
 class Events extends Component {
 	constructor() {
@@ -55,11 +55,11 @@ class Events extends Component {
 				})
 			});
 			if (res.status >= 500)
-				store.dispatch(showMessage("Error al eliminar el evento"));
+				store.dispatch(showAlert("Error al eliminar el evento"));
 			else {
 				const data = await res.json();
 				if (data.status === "ok") {
-					store.dispatch(showMessage("Eliminado con exito"));
+					store.dispatch(showAlert("Eliminado con exito"));
 					this.getEvents();
 				}
 			}
@@ -86,15 +86,15 @@ class Events extends Component {
 			<h1>Eventos</h1>
 			{
 				editting ?
-				<button id="add" onClick={this.cancelEvent}>Cerrar</button>
-				:
-				<button id="close" onClick={this.newEvent}>Crear</button>
+					<button id="add" onClick={this.cancelEvent}>Cerrar</button>
+					:
+					<button id="close" onClick={this.newEvent}>Crear</button>
 			}
 			
 			{editting ?
 				<ManageEvents data={editData}/>
 				:
-				<div>
+				<div id="events-container">
 					{events.length > 0 ? events.map(({ID, name, description, image}, i) => (<div key={name+ID} style={{backgroundImage: `url(${image})`}} className="event">
 						<div className="shadow">
 							<h3>{name}</h3>
@@ -103,17 +103,23 @@ class Events extends Component {
 							<button onClick={() => this.editEvent(i)}>Editar</button>
 						</div>
 					</div>))
-					:
-					<div id="no-events">
-						<span>No Hay Eventos</span>
-						<button onClick={this.newEvent}>Crear</button>	
-					</div>
+						:
+						<div id="no-events">
+							<span>No Hay Eventos</span>
+							<button onClick={this.newEvent}>Crear</button>	
+						</div>
 					}
 				</div>
 			}
 			<style jsx>{`
+				#main-events {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+				}
 				#main-events h1 {
 					text-align: center;
+					margin: 25px 0;
 				}
 				:global(#main-events button) {
 					padding: 15px 25px;
@@ -142,6 +148,13 @@ class Events extends Component {
 					display: block;
 					margin: 50px auto;
 				}
+				#events-container {
+					position: absolute;
+					bottom: 0;
+					height: calc(100% - 150px);
+					width: 100%;
+					overflow-y: scroll;
+				}
 			`}</style>
 			<style jsx global>{`
 				.event {
@@ -167,7 +180,7 @@ class Events extends Component {
 					float: right;
 				}
 			`}</style>
-		</div>
+		</div>;
 	}
 }
 

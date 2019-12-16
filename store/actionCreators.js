@@ -1,21 +1,18 @@
-const showAlert = (message) =>{
-	return {
-		type: "SHOW_ALERT",
-		message
-	};
-};
+const showAlert = message => ({
+	type: "SHOW_ALERT",
+	message
 
-const hideAlert = () => {
-	return {
-		type: "HIDE_ALERT"
-	};
-};
+});
 
-const newEvent = () => {
-	return {
-		type: "NEW"
-	}
-};
+const hideAlert = () => ({
+	type: "HIDE_ALERT"
+
+});
+
+const newEvent = () => ({
+	type: "NEW"
+});
+
 const editEvent = (data) => ({
 	type: "EDIT",
 	...data
@@ -23,6 +20,22 @@ const editEvent = (data) => ({
 
 const closeEdit = () => ({
 	type: "CLOSE"
-})
+});
 
-export { showAlert, hideAlert, editEvent, newEvent, closeEdit };
+const login = () => ({
+	type: "LOGIN"
+});
+
+const logout = () => ({
+	type: "LOGOUT"
+});
+
+export {
+	showAlert,
+	hideAlert,
+	editEvent,
+	newEvent,
+	closeEdit,
+	login,
+	logout
+};
