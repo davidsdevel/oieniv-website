@@ -1,19 +1,7 @@
 import React from "react";
+import {array} from "prop-types";
 
-const PhotosURL = [
-	"/images/test/0.jpg",
-	"/images/test/1.jpg",
-	"/images/test/2.jpg",
-	"/images/test/3.jpg",
-	"/images/test/4.jpg",
-	"/images/test/5.jpg",
-	"/images/test/6.jpg",
-	"/images/test/7.jpg",
-	"/images/test/8.jpg",
-	"/images/test/9.jpg"
-];
-
-const MapPhotos = () => PhotosURL.map((e) => (<div key={e} className="helper-photo-container">
+const MapPhotos = ({images}) => images.map((e) => (<div key={e} className="helper-photo-container">
 	<div style={{"backgroundImage": `url(${e})`}} alt="Test Photo" className="helper-photo"/>
 	<style jsx>{`
 		.helper-photo {
@@ -37,9 +25,10 @@ const MapPhotos = () => PhotosURL.map((e) => (<div key={e} className="helper-pho
 		}
 	`}</style>
 </div>));
-const Photos = () => (
+
+const Photos = ({images}) => (
 	<div id="main-photos-container">
-		<MapPhotos/>
+		<MapPhotos images={images}/>
 		<style jsx>{`
 			#main-photos-container {
 				margin: auto;
@@ -50,5 +39,13 @@ const Photos = () => (
 		`}</style>
 	</div>
 );
+
+MapPhotos.propTypes = {
+	images: array
+};
+
+Photos.propTypes = {
+	images: array
+};
 
 export default Photos;

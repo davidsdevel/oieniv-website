@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Head from "../components/head";
-import {number, boolean, string, object} from "prop-types";
+import {number, boolean, string, object, array} from "prop-types";
 import LandingPage from "../components/helper/landingPage";
 import President from "../components/helper/president";
 import Description from "../components/helper/description";
@@ -36,7 +36,7 @@ class Helper extends Component {
 		}
 	}
 	render() {
-		const {error, status, url, title, landing, description, message, president} = this.props;
+		const {error, status, url, title, landing, description, message, president, images} = this.props;
 
 		if (error)
 			return <NextError statusCode={status} url={url}/>;
@@ -47,7 +47,7 @@ class Helper extends Component {
 				<LandingPage title={title} data={landing}/>
 				<President title={title} data={president}/>
 				<Description title={title} data={description}/>
-				<Photos/>
+				<Photos images={images}/>
 				<Message data={message}/>
 			</div>
 		);
@@ -62,7 +62,8 @@ Helper.propTypes = {
 	landing: object,
 	description: object,
 	message: object,
-	president: object
+	president: object,
+	images: array
 };
 
 export default Helper;

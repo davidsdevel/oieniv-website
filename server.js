@@ -89,7 +89,7 @@ async function Prepare() {
 
 					switch(action) {
 					case "login":
-						if (req.body.username == "oieniv" && req.body.password == 1234) {
+						if (req.body.username == "oieniv" && req.body.password === "oieniv.17") {
 							res.json({
 								success: true
 							});

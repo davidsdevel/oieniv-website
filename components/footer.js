@@ -42,7 +42,6 @@ const Footer = () => (
 		<ul>
 			<li>Nuestra sede principal queda ubicada en: direccion Estado Sucre, Venezuela</li>
 			<li>+580123456789</li>
-			<li>Si tienes dudas o preguntas, escribenos a: user@mail.com</li>
 		</ul>
 		<ul id="footer-links">
 			{links.map(({name, url}) => (
