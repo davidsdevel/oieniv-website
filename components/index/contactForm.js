@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import store from "../../store/reducer";
+import {showAlert} from "../../store/actionCreators";
 
 class ContactForm extends Component {
 	constructor() {
@@ -18,9 +20,46 @@ class ContactForm extends Component {
 		this.showLettersCounter = this.showLettersCounter.bind(this);
 		this.hideLettersCounter = this.hideLettersCounter.bind(this);
 	}
-	send() {
-		if (this.state.readyToSend)
-			console.log("Sending");
+	async send() {
+		try {
+			const {name, email, comment: message, phoneNumber: phone} = this.state;
+			if (name && email && message && phone) {
+
+				const res = await fetch(`${process.env.ORIGIN}/send-comment`, {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body:JSON.stringify({
+						name,
+						email,
+						phone,
+						message
+					})
+				});
+
+				if (res.status >= 400)
+					store.dispatch(showAlert("Error al enviar mensaje, intentelo mas tarde"));
+				else {
+					let data = await res.json();
+
+					if (data.status === "OK") {
+						store.dispatch(showAlert(data.message));
+
+						this.setState({
+							name: "",
+							email: "",
+							comment: "",
+							phoneNumber: ""
+						});
+
+					}
+
+				}
+			}
+		} catch(err) {
+			store.dispatch(showAlert("Error al enviar mensaje, intentelo mas tarde"));
+		}
 	}
 	showLettersCounter() {
 		this.setState({
@@ -37,15 +76,7 @@ class ContactForm extends Component {
 
 		const value = type === "checkbox" ? target.checked : target.value;
 
-		if (name === "comment") {
-			if (this.state.comment.length < 250) {
-				this.setState({
-					comment: value
-				});
-			}
-		}
-		else
-			this.setState({[name]: value });
+		this.setState({[name]: value });
 	}
 	render() {
 		return (
@@ -58,6 +89,7 @@ class ContactForm extends Component {
 					<div id="textarea-container">
 						<textarea
 							placeholder="Comentario"
+							maxLength="250"
 							onChange={this.handleInputChanges}
 							name="comment"
 							onFocus={this.showLettersCounter}

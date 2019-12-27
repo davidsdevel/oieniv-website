@@ -6,7 +6,7 @@ import ContactForm from "../components/index/contactForm";
 import Slogan from "../components/index/slogan";
 import Slider from "../components/index/eventsSlider";
 import fetch from "isomorphic-fetch";
-import {object} from "prop-types";
+import {array} from "prop-types";
 
 const Home = (props) => (
 	<div>
@@ -33,7 +33,7 @@ Home.getInitialProps = async ({req}) => {
 	else
 		origin = location.host;
 
-	const dataRes = await fetch(`${origin.match(/localhost|127\.0\.0\.1|::1/) !== null ? "http:" : "https:"}//${origin}/data/index`);
+	const dataRes = await fetch(`${process.env.ORIGIN}/data/index`);
 	var data = await dataRes.json();
 
 	if (data.length === 0)
@@ -47,13 +47,14 @@ Home.getInitialProps = async ({req}) => {
 			"image": "/images/OIENIV-columna-y-baluarte-de-la-verdad.jpg",
 			"church": ""
 		}];
+
 	return {
 		data
 	};
 };
 
 Home.propTypes = {
-	data: object
+	data: array
 };
 
 export default Home;

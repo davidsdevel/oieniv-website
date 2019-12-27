@@ -15,11 +15,13 @@ const helpers = require("./data/helperBodies.json");
 
 const database = require("./lib/server/DB");
 const Api = require("./lib/server/API");
+const Mail = require("./lib/server/Mail");
 
 const DB = new database({ dev });
 const API = new Api({
 	db: DB
 });
+const mail = new Mail();
 
 server
 	.use(express.json())
@@ -130,8 +132,16 @@ async function Prepare() {
 					res.status(500).send(err);
 				}
 			})
-			.post("/send-comment", (req, res) => {
-				res.send("sucess");
+			.post("/send-comment", async (req, res) => {
+				try {
+					const {name, email, phone, message} = req.body;
+
+					const data = await mail.sendContactMessage(name, email, phone, message);
+
+					res.json(data);
+				} catch(err) {
+					res.send(err.toString());
+				}
 			})
 			.get("*", (req, res) => handle(req, res))
 			.listen(PORT, err => {

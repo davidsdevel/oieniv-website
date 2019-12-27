@@ -12,14 +12,7 @@ import NextError from "./_error";
 class Helper extends Component {
 	static async getInitialProps({req, query, asPath}) {
 		try {
-			let origin;
-
-			if (req)
-				origin = req.headers["host"];
-			else
-				origin = location.host;
-
-			const fetchRes = await fetch(`${origin.match(/localhost|127\.0\.0\.1|::1/) !== null ? "http:" : "https:"}//${origin}/data/${query.helper}`);
+			const fetchRes = await fetch(`${process.env.ORIGIN}/data/${query.helper}`);
 
 			if (fetchRes.status >= 200 && fetchRes.status < 400) {
 

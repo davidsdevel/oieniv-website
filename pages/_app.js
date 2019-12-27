@@ -17,10 +17,6 @@ const Layout = ({ Component, pageProps }) => {
 			<Footer />
 		}
 		<style global jsx>{`
-			@font-face {
-				font-family: Roboto;
-				src: url(/fonts/Roboto.ttf);
-			}
 			* {
 				margin: 0;
 				padding: 0;

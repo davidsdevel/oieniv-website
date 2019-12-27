@@ -6,7 +6,7 @@ const data = [
 		name: "Anjeiv",
 		url: "/anjeiv",
 		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		logoURL: "/images/anjeiv-logo.png"
+		logoURL: "/images/anjeiv-logo-black.png"
 	},
 	{
 		name: "Andeiv",

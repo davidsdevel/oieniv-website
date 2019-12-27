@@ -35,6 +35,7 @@ const Head = props => (
 		<meta property="og:image" content={props.ogImage || defaultOGImage} />
 		<meta property="og:image:width" content="1280" />
 		<meta property="og:image:height" content="853" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
 	</NextHead>
 );
 
