@@ -5,7 +5,7 @@ const fileUpload = require("express-fileupload");
 const server = express();
 
 const PORT = parseInt(process.env.PORT, 10) || 3000;
-const AUTH_SECRET = "013N1V.s3cr3t"; //TODO: Cambiar a variable de entorno
+//const AUTH_SECRET = "013N1V.s3cr3t"; //TODO: Cambiar a variable de entorno
 
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
@@ -27,7 +27,7 @@ server
 	.use(express.json())
 	.use(fileUpload());
 
-const authMiddleware = (req, res, next) => {
+/*const authMiddleware = (req, res, next) => {
 	const {authorization} = req.headers;
 
 	const decriptAuth = Buffer.from(authorization, "hex").toString("utf8");
@@ -36,7 +36,7 @@ const authMiddleware = (req, res, next) => {
 		res.sendStatus(401);
 	else
 		return next();
-};
+};*/
 
 async function Prepare() {
 	try {

@@ -1,6 +1,6 @@
 {
   "hooks": {
     "pre-commit": "eslint .",
-    "pre-push": "jest"
+    "pre-push": "echo Hola"
   }
 }

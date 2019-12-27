@@ -25,14 +25,7 @@ const Home = (props) => (
 	</div>
 );
 
-Home.getInitialProps = async ({req}) => {
-	var origin;
-
-	if (req)
-		origin = req.headers["host"];
-	else
-		origin = location.host;
-
+Home.getInitialProps = async () => {
 	const dataRes = await fetch(`${process.env.ORIGIN}/data/index`);
 	var data = await dataRes.json();
 

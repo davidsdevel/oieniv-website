@@ -10,7 +10,7 @@ import fetch from "isomorphic-fetch";
 import NextError from "./_error";
 
 class Helper extends Component {
-	static async getInitialProps({req, query, asPath}) {
+	static async getInitialProps({query, asPath}) {
 		try {
 			const fetchRes = await fetch(`${process.env.ORIGIN}/data/${query.helper}`);
 
