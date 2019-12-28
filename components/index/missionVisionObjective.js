@@ -27,6 +27,7 @@ class MissionVisionObjective extends Component {
 				<style jsx global>{`
 #mission-main {
 	padding: 50px 0;
+	display: flex;
 }
 .mission-container h3 {
 	color: #4c4c4c;

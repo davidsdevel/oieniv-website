@@ -17,7 +17,7 @@
 		},
 		"president": {
 			"name": "Adrián Cedeño",
-			"image": "/images/president.jpg",
+			"image": "/images/presidents/anjeiv.jpg",
 			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 		},
 		"images": [
@@ -50,7 +50,7 @@
 		},
 		"president": {
 			"name": "Agustín Sanchez",
-			"image": "/images/president.jpg",
+			"image": "/images/presidents/lavozdeoieniv.jpg",
 			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 		},
 		"images": [
@@ -112,7 +112,7 @@
 			"image": ""
 		},
 		"president": {
-			"name": "Roraima de González",
+			"name": "Lohamny Reyes",
 			"image": "/images/president.jpg",
 			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 		},
@@ -130,6 +130,138 @@
 			"/images/vemiv/10.jpg",
 			"/images/vemiv/11.jpg",
 			"/images/vemiv/12.jpg"
+		]
+	},
+	"copaso": {
+		"title": "COPASO",
+		"landing": {
+			"background": "/images/copaso-landing-background.jpg",
+			"extendedTitle": "Concilio de Pastores de OIENIV",
+			"logo":"",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+		},
+		"description": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"image":""
+		},
+		"message": {
+			"text": "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\"",
+			"image": ""
+		},
+		"president": {
+			"name": "Lohamny Reyes",
+			"image": "/images/president.jpg",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		},
+		"images": [
+			"/images/copaso/0.jpg",
+			"/images/copaso/1.jpg",
+			"/images/copaso/2.jpg",
+			"/images/copaso/3.jpg",
+			"/images/copaso/4.jpg",
+			"/images/copaso/5.jpg",
+			"/images/copaso/6.jpg",
+			"/images/copaso/7.jpg",
+			"/images/copaso/8.jpg"
+		]
+	},
+	"aevo": {
+		"title": "AEVO",
+		"landing": {
+			"background": "/images/aevo-landing-background.jpg",
+			"extendedTitle": "Concilio de Pastores de OIENIV",
+			"logo":"",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+		},
+		"description": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"image":""
+		},
+		"message": {
+			"text": "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\"",
+			"image": ""
+		},
+		"president": {
+			"name": "Gregorio Sánchez",
+			"image": "/images/presidents/aevo.jpg",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		},
+		"images": [
+			"/images/aevo/0.jpg",
+			"/images/aevo/1.jpg",
+			"/images/aevo/2.jpg",
+			"/images/aevo/3.jpg",
+			"/images/aevo/4.jpg",
+			"/images/aevo/5.jpg",
+			"/images/aevo/6.jpg",
+			"/images/aevo/7.jpg",
+			"/images/aevo/8.jpg"
+		]
+	},
+	"pronani": {
+		"title": "Pronani",
+		"landing": {
+			"background": "/images/vemiv-landing-background.jpg",
+			"extendedTitle": "Programa Nacional de Atencion al Niño",
+			"logo":"",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+		},
+		"description": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"image":""
+		},
+		"message": {
+			"text": "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\"",
+			"image": ""
+		},
+		"president": {
+			"name": "Lohamny Reyes",
+			"image": "/images/president.jpg",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		},
+		"images": [
+			"/images/pronani/0.jpg",
+			"/images/pronani/1.jpg",
+			"/images/pronani/2.jpg",
+			"/images/pronani/3.jpg",
+			"/images/pronani/4.jpg",
+			"/images/pronani/5.jpg",
+			"/images/pronani/6.jpg",
+			"/images/pronani/7.jpg",
+			"/images/pronani/8.jpg"
+		]
+	},
+	"primerosauxilios": {
+		"title": "Primeros Auxilios",
+		"landing": {
+			"background": "/images/vemiv-landing-background.jpg",
+			"extendedTitle": "",
+			"logo":"",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+		},
+		"description": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"image":""
+		},
+		"message": {
+			"text": "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\"",
+			"image": ""
+		},
+		"president": {
+			"name": "Agustín Sánchez",
+			"image": "/images/presidents/lavozdeoieniv.jpg",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		},
+		"images": [
+			"/images/primerosauxilios/0.jpg",
+			"/images/primerosauxilios/1.jpg",
+			"/images/primerosauxilios/2.jpg",
+			"/images/primerosauxilios/3.jpg",
+			"/images/primerosauxilios/4.jpg",
+			"/images/primerosauxilios/5.jpg",
+			"/images/primerosauxilios/6.jpg",
+			"/images/primerosauxilios/7.jpg",
+			"/images/primerosauxilios/8.jpg"
 		]
 	}
 }

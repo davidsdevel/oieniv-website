@@ -144,7 +144,7 @@ async function Prepare() {
 					res.status(500).send(err.toString());
 				}
 			})
-			.get("image/resize", async (req, res) => {
+			.get("/image/resize", async (req, res) => {
 				const {url, width} = req.query;
 				try {
 					const image = await Jimp.read(url);

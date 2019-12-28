@@ -5,43 +5,43 @@ const data = [
 	{
 		name: "Anjeiv",
 		url: "/anjeiv",
-		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		content: "La Asociacion Nacional de Jovenes es la encargada de realizar actividades y llevar un mensaje dirigido por y para jovenes",
 		logoURL: "/images/anjeiv-logo-black.png"
 	},
 	{
 		name: "Andeiv",
 		url: "/andeiv",
-		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		content: "Andeiv es la asociacion en las cuales las damas toman el liderazgo, demostrando que pueden ser delicadas y a su vez afrontar retos",
 		logoURL: ""
 	},
 	{
 		name: "Copaso",
 		url: "/copaso",
-		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		content: "El Concilio de Pastores de OIENIV es el encargado de ayudar a los pastores a llevar estrategias de crecimiento espiritual para las iglesias",
 		logoURL: ""
 	},
 	{
 		name: "Pronani",
 		url: "/pronani",
-		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		content: "Programa Nacional encargado de formar e instruir personas para llevar el mensaje de salvacion a los niños de manera creativa",
 		logoURL: ""
 	},
 	{
 		name: "Vemiv",
 		url: "/vemiv",
-		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		content: "",
 		logoURL: "/images/vemiv-logo.png"
 	},
 	{
 		name: "AEVO",
 		url: "/aevo",
-		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		content: "",
 		logoURL: ""
 	},
 	{
 		name: "La Voz de OIENIV",
 		url: "/lavozdeoieniv",
-		content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		content: "Radio encargada de llevar el mensaje del evangelio a travez de las frecuencias radiales dentro de Venezuela y mas alla via Streaming",
 		logoURL: "/images/lavozdeoieniv-logo.png"
 	},
 	{
@@ -57,12 +57,7 @@ const childs = data.map(({url, name, content, logoURL}, i) => ( <HelperBody key=
 const HelperBodies = () => (
 	<div id="helper-bodies-container">
 		<h3 className="sub-titles">Organos Auxiliares de OIENIV</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>OIENIV cuenta con distintas entidades para implementar y planificar estrategias a un sector o a traves de un medio especifico. Dichas entidades se llaman Organos Auxiliares, entre las algunas funciones de estas estan llevar un mensaje dirigido a jovenes, damas y niños, llevar las buenas nuevas de salvacion  a travez de las frecuencias radiales, realizar voluntariados misioneros, entre otros</p>
 		{childs}
 		<style jsx global>{`
 			#helper-bodies-container {
