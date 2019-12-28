@@ -147,7 +147,7 @@ async function Prepare() {
 			.get("image/resize", async (req, res) => {
 				const {url, width} = req.query;
 				try {
-					const image = await Jimp.read(url)
+					const image = await Jimp.read(url);
 					res.send(image.resize(width, Jimp.AUTO).getBufferAsync(Jimp.AUTO));
 				} catch(err) {
 					res.status(500).send(err.toString());

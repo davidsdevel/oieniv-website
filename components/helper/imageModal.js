@@ -1,3 +1,5 @@
+import React, {Component} from "react";
+
 class imageModal extends Component {
 	constructor() {
 		super();
@@ -5,6 +7,11 @@ class imageModal extends Component {
 			actual:"",
 			next: "",
 			prev: ""
-		}
+		};
+	}
+	render() {
+		return (<div></div>);
 	}
 }
+
+export default imageModal;
