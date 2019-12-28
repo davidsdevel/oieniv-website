@@ -43,7 +43,7 @@ class Helper extends Component {
 
 		return (
 			<div>
-				<Head title={title} />
+				<Head title={`${title} - OIENIV`} />
 				<LandingPage title={title} data={landing}/>
 				<President title={title} data={president}/>
 				<Description title={title} data={description}/>

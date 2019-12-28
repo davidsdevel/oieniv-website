@@ -2,13 +2,27 @@ import React from "react";
 import {array} from "prop-types";
 
 const MapPhotos = ({images}) => images.map((e) => (<div key={e} className="helper-photo-container">
-	<div style={{"backgroundImage": `url(${e})`}} alt="Test Photo" className="helper-photo"/>
+	<div style={{"backgroundImage": `url(${e})`}} alt="Test Photo" className="helper-photo">
+		<div className="shadow"/>
+	</div>
 	<style jsx>{`
 		.helper-photo {
 			width: 100%;
 			height: 100%;
 			background-position: center;
 			background-size: cover;
+			cursor: pointer;
+		}
+		.helper-photo .shadow {
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0,.5);
+			opacity: 0;
+
+			transition: ease .3s;
+		}
+		.helper-photo:hover .shadow {
+			opacity: 1;
 		}
 		.helper-photo-container {
 			display: inline-block;

@@ -1,6 +1,7 @@
 const express = require("express");
 const next = require("next");
 const fileUpload = require("express-fileupload");
+const Jimp = require("jimp");
 
 const server = express();
 
@@ -140,13 +141,23 @@ async function Prepare() {
 
 					res.json(data);
 				} catch(err) {
-					res.send(err.toString());
+					res.status(500).send(err.toString());
+				}
+			})
+			.get("image/resize", async (req, res) => {
+				const {url, width} = req.query;
+				try {
+					const image = await Jimp.read(url)
+					res.send(image.resize(width, Jimp.AUTO).getBufferAsync(Jimp.AUTO));
+				} catch(err) {
+					res.status(500).send(err.toString());
 				}
 			})
 			.get("*", (req, res) => handle(req, res))
 			.listen(PORT, err => {
 				if (err)
 					throw new Error(err);
+
 				console.log(`> Ready on http://localhost:${PORT}`);
 			});
 	} catch(err) {

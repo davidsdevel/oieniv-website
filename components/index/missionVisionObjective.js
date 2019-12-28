@@ -3,17 +3,17 @@ import MissionVisionObjectiveChild from "./missionVisionObjectiveChild";
 
 const data = [{
 	title:"Misión",
-	content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+	content: "Nuestra misión como Organización Cristiana es la encomendada por nuestro señor Jesucristo en el libro de Mateo 28: 19-20: Instruirlos en los caminos del Evangelio, enseñarles a seguir el ejemplo de nuestro señor Jesucristo e instarles a guardar todo lo que Él nos enseñó",
 	iconURL: "/images/flag1.svg"
 },
 {
 	title:"Visión",
-	content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+	content: "Nuestra Visión es Salvar al mayor número de personas posible, utilizando y proveyendo las herramientas necesarias para alcanzar a esas personas, a su vez posicionarnos como una organización representativa del verdadero evangelio de Jesucristo",
 	iconURL: "/images/rocket.svg"
 },
 {
 	title:"Objetivo",
-	content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+	content: "Como objetivo nos propusimos trabajar en actividades que impacten los lugares donde nos encontramos: actividades sociales, deportivas, recreativas, infantiles, juveniles, etc. Además, de llevar a través de programas de radio, redes sociales, y diversos canales las buenas nuevas de salvación",
 	iconURL: "/images/eye.svg"
 }];
 

@@ -63,9 +63,9 @@ class ManageEvents extends Component {
 			[name]: value
 		});
 
-		let {ID, name:stateName, description, date, time, location} = this.state;
+		let {ID, name:stateName, description, date, time, location, church} = this.state;
 
-		localStorage.setItem("temp", JSON.stringify({ID, name:stateName, description, date, time, location}));
+		localStorage.setItem("temp", JSON.stringify({ID, name:stateName, description, date, time, location, church}));
 	}
 	async createEvent() {
 		try {

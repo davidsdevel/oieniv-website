@@ -54,16 +54,82 @@
 			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 		},
 		"images": [
-			"/images/test/0.jpg",
-			"/images/test/1.jpg",
-			"/images/test/2.jpg",
-			"/images/test/3.jpg",
-			"/images/test/4.jpg",
-			"/images/test/5.jpg",
-			"/images/test/6.jpg",
-			"/images/test/7.jpg",
-			"/images/test/8.jpg",
-			"/images/test/9.jpg"
+			"/images/lavozdeoieniv/0.jpg",
+			"/images/lavozdeoieniv/1.jpg",
+			"/images/lavozdeoieniv/2.jpg",
+			"/images/lavozdeoieniv/3.jpg",
+			"/images/lavozdeoieniv/4.jpg"
+		]
+	},
+	"andeiv": {
+		"title": "Andeiv",
+		"landing": {
+			"background": "/images/andeiv-landing-background.jpg",
+			"extendedTitle": "Asociación Nacional de Damas Evangelicas Independientes de Venezuela",
+			"logo":"",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+		},
+		"description": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"image":""
+		},
+		"message": {
+			"text": "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\"",
+			"image": ""
+		},
+		"president": {
+			"name": "Roraima de González",
+			"image": "/images/president.jpg",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		},
+		"images": [
+			"/images/andeiv/0.jpg",
+			"/images/andeiv/1.jpg",
+			"/images/andeiv/2.jpg",
+			"/images/andeiv/3.jpg",
+			"/images/andeiv/4.jpg",
+			"/images/andeiv/5.jpg",
+			"/images/andeiv/6.jpg",
+			"/images/andeiv/7.jpg",
+			"/images/andeiv/8.jpg",
+			"/images/andeiv/9.jpg"
+		]
+	},
+	"vemiv": {
+		"title": "Vemiv",
+		"landing": {
+			"background": "/images/vemiv-landing-background.jpg",
+			"extendedTitle": "Voluntariado Evangelistico Misionero Vacacional",
+			"logo":"",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+		},
+		"description": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"image":""
+		},
+		"message": {
+			"text": "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\"",
+			"image": ""
+		},
+		"president": {
+			"name": "Roraima de González",
+			"image": "/images/president.jpg",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		},
+		"images": [
+			"/images/vemiv/0.jpg",
+			"/images/vemiv/1.jpg",
+			"/images/vemiv/2.jpg",
+			"/images/vemiv/3.jpg",
+			"/images/vemiv/4.jpg",
+			"/images/vemiv/5.jpg",
+			"/images/vemiv/6.jpg",
+			"/images/vemiv/7.jpg",
+			"/images/vemiv/8.jpg",
+			"/images/vemiv/9.jpg",
+			"/images/vemiv/10.jpg",
+			"/images/vemiv/11.jpg",
+			"/images/vemiv/12.jpg"
 		]
 	}
 }
